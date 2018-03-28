@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/contacto', function () {
+    return view('paginas/contacto');
+});
+Route::get('/portafolio', function () {
+    return view('paginas/portafolio');
+});
+Route::get('/',['as' => 'inicio', 'uses' => 'PagesController@inicio']);
+Route::get('inicio/',['as' => 'inicio', 'uses' => 'PagesController@inicio']);
+Route::get('contacto/',['as' => 'contacto', 'uses' => 'PagesController@contacto']);
+Route::get('portafolio/',['as' => 'portafolio', 'uses' => 'PagesController@portafolio']);
+
