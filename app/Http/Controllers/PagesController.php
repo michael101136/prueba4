@@ -22,4 +22,12 @@ class PagesController extends Controller
 	
 		   return view('paginas/contacto');
 	}
+	public function nosotros()
+	{
+		return view('paginas/nosotros');
+	}
+	public function habitacionessimples()
+	{
+		return view('paginas/habitacionessimples');
+	}
 }

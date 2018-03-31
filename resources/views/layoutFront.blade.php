@@ -15,7 +15,8 @@
     <link href="http://fonts.googleapis.com/css?family=Metrophobic" type="text/css" rel="stylesheet" id="main-style">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300italic,400italic,600italic,700italic,300,600,800,800italic" type="text/css" rel="stylesheet" id="main-style">
     <link href="http://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic" type="text/css" rel="stylesheet" id="main-style">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
 
     <link href="{{ asset('/css/style.css')}}" type="text/css" rel="stylesheet" id="main-style">
     <link href="{{ asset('/css/html5-reset.css')}}" type="text/css" rel="stylesheet" id="main-style">
@@ -53,6 +54,7 @@
     <script src="{{ asset('/js/jquery.fitvids.js')}}" type="text/javascript"></script> <!-- responsive video embeds -->
     <script src="{{ asset('/js/jquery.touchSwipe.min.js')}}" type="text/javascript"></script> <!-- touchSwipe -->
     <script src="{{ asset('/js/custom.js')}}" type="text/javascript"></script> <!-- jQuery initialization -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- end JS -->
     
     <title>Finesse - Responsive Business Theme</title>
@@ -110,13 +112,24 @@
                     <ul id="navlist" class="clearfix">
                         <li class="{{ activeMenu('inicio') }}"><a href="{{route('inicio')}}"  rel="submenu1">Inicio</a>
                             <ul id="submenu1" class="ddsubmenustyle">
-                                <li class="{{ activeMenu('inicio') }}"><a href="{{route('inicio')}}">Home Version 1</a></li>
-                                <li><a href="index-2.html">Home Version 2</a></li>
+                                <li class="{{ activeMenu('inicio') }}"></li>
+                                <li></li>
                             </ul>
                         </li>
                        
-                       
-                        <li class="{{ activeMenu('portafolio') }}"><a href="portfolio.html" rel="submenu4">Portfolio</a>
+                        <li class="{{ activeMenu('nosotros') }}"><a href="#" rel="submenu4">Quienes somos</a>
+                            <ul id="submenu4" class="ddsubmenustyle">
+                                <li><a href="{{route('nosotros')}}">Nosotros</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="{{ activeMenu('habitacionessimples') }}"><a href="#" rel="submenu4">Servicios Hotel</a>
+                            <ul id="submenu4" class="ddsubmenustyle">
+                                <li><a href="{{route('habitacionessimples')}}">Habitaciones simples</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="{{ activeMenu('portafolio') }}"><a href="" rel="submenu4">Portfolio</a>
                             <ul id="submenu4" class="ddsubmenustyle">
                                 <li><a href="{{route('portafolio')}}">Portafolio</a></li>
                                 
