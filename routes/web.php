@@ -17,7 +17,7 @@ Route::get('inicio/',['as' => 'inicio', 'uses' => 'PagesController@inicio']);
 Route::get('contacto/',['as' => 'contacto', 'uses' => 'PagesController@contacto']);
 Route::get('portafolio/',['as' => 'portafolio', 'uses' => 'PagesController@portafolio']);
 Route::get('nosotros/',['as'=>'nosotros','uses'=>'PagesController@nosotros']);
-Route::get('habitaciones-simples/',['as'=>'habitacionessimples','uses'=>'PagesController@habitacionessimples']);
+Route::get('habitaciones-simples/',['as'=>'habitaciones-simples','uses'=>'PagesController@habitacionessimples']);
 Route::get('habitaciones-dobles/',['as'=>'habitacionesdobles','uses'=>'PagesController@habitacionesdobles']);
 Route::get('habitaciones-matrimoniales/',['as'=>'habitacionesmatrimoniales','uses'=>'PagesController@habitacionesmatrimoniales']);
 Route::get('terapias-alternativas/',['as'=>'terapiasalternativas','uses'=>'PagesController@terapiasalternativas']);
