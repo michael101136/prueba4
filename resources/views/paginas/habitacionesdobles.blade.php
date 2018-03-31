@@ -14,7 +14,7 @@
                 <div class="three-fourths">
                 	<div class="entry-slider">
                         <ul>
-                            <li><a class="fancybox" rel="gallery-living-brown" href="images/entries/full-size/living-brown.jpg" title="Image Title"><span class="overlay zoom"></span><img src="images/entries/700x500/living-brown-700x500.png" alt=""></a></li>
+                            <li><a class="fancybox" rel="gallery-living-brown" href="images/entries/full-size/living-brown.jpg" title="Image Title"><span class="overlay zoom"></span><img src="images/entries/700x500/doble1.jpg" alt=""></a></li>
                             <li style="display: none;"><a class="fancybox" rel="gallery-living-brown" href="images/entries/full-size/dining-and-living-cream.jpg" title="Image Title"><span class="overlay zoom"></span><img src="images/entries/700x500/dining-and-living-cream-700x500.png" alt=""></a></li>
                             <li style="display: none;"><a class="fancybox" rel="gallery-living-brown" href="images/entries/full-size/living-white.jpg" title="Image Title"><span class="overlay zoom"></span><img src="images/entries/700x500/living-white-700x500.png" alt=""></a></li>
                         </ul>
@@ -25,7 +25,7 @@
                 <!-- begin project description -->
                 <div class="one-fourth column-last">
                     <h3></h3>
-                    <div class="panel panel-warning">
+                    <div class="panel panel-info class">
                         <div class="panel-heading">HABITACIONES DOBLES</div>
                         <div class="panel-body">
                             <div align="justify"><p>El hotel Abancay, ofrece varios tipos de habitaciones y una de ellas son las habitaciones dobles para que nuestros clientes se sientan como en su casa.</p></div>

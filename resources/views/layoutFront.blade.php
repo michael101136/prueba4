@@ -16,7 +16,9 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300italic,400italic,600italic,700italic,300,600,800,800italic" type="text/css" rel="stylesheet" id="main-style">
     <link href="http://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic" type="text/css" rel="stylesheet" id="main-style">
 
+
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css">
+
 
     <link href="{{ asset('/css/style.css')}}" type="text/css" rel="stylesheet" id="main-style">
     <link href="{{ asset('/css/html5-reset.css')}}" type="text/css" rel="stylesheet" id="main-style">
@@ -191,7 +193,7 @@
             <div id="footer-top">
                 <div class="one-fourth">
                     <div class="widget">
-                        <h3>About Us</h3>
+                        <h3>Nosotros</h3>
                         <p>Finesse is a responsive business and portfolio theme carefully handcrafted using the latest technologies.</p>
                         <p>It features a clean design, as well as extended functionality that will come in very handy.</p>
                     </div>
@@ -219,9 +221,9 @@
                 </div>
                 <div class="one-fourth column-last">
                     <div class="widget contact-info">
-                        <h3>Contact Info</h3>
-                        <p class="address"><strong>Address:</strong> 123 Street, City, Country</p>
-                        <p class="phone"><strong>Phone:</strong> (123) 456-7890</p>
+                        <h3>Contáctenos</h3>
+                        <p class="address"><strong>Dirección:</strong> Av. Nuñez N° 705 Abancay-Apurímac</p>
+                        <p class="phone"><strong>Teléfono:</strong> (123) 456-7890</p>
                         <p class="email"><strong>Email:</strong> <a href="mailto:info@finesse.com">info@finesse.com</a></p>
                         <div class="social-links">
                             <h4>Follow Us</h4>
