@@ -125,10 +125,15 @@
 
                         <li class="{{ activeMenu('habitaciones-simples') }}"><a href="#" rel="submenu4">Servicios Hotel</a>
                             <ul id="submenu4" class="ddsubmenustyle">
+
                                 <li><a href="{{route('habitaciones-simples')}}">Habitaciones simples</a></li>
+
+                                <li><a href="{{route('habitacionesdobles')}}">Habitaciones dobles</a></li>
+                                <li><a href="{{route('habitacionesdobles')}}">Habitaciones matrimoniales</a></li>
+
                             </ul>
                         </li>
-
+   
                         <li class="{{ activeMenu('portafolio') }}"><a href="" rel="submenu4">Portfolio</a>
                             <ul id="submenu4" class="ddsubmenustyle">
                                 <li><a href="{{route('portafolio')}}">Portafolio</a></li>

@@ -30,4 +30,12 @@ class PagesController extends Controller
 	{
 		return view('paginas/habitacionessimples');
 	}
+	public function habitacionesdobles()
+	{
+		return view('paginas/habitacionesdobles');
+	}
+	public function habitacionesmatrimoniales()
+	{
+		return view('paginas/habitacionesmatrimoniales');
+	}
 }
