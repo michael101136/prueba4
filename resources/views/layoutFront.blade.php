@@ -15,8 +15,8 @@
     <link href="http://fonts.googleapis.com/css?family=Metrophobic" type="text/css" rel="stylesheet" id="main-style">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300italic,400italic,600italic,700italic,300,600,800,800italic" type="text/css" rel="stylesheet" id="main-style">
     <link href="http://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic" type="text/css" rel="stylesheet" id="main-style">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css">
 
     <link href="{{ asset('/css/style.css')}}" type="text/css" rel="stylesheet" id="main-style">
     <link href="{{ asset('/css/html5-reset.css')}}" type="text/css" rel="stylesheet" id="main-style">
@@ -54,7 +54,8 @@
     <script src="{{ asset('/js/jquery.fitvids.js')}}" type="text/javascript"></script> <!-- responsive video embeds -->
     <script src="{{ asset('/js/jquery.touchSwipe.min.js')}}" type="text/javascript"></script> <!-- touchSwipe -->
     <script src="{{ asset('/js/custom.js')}}" type="text/javascript"></script> <!-- jQuery initialization -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+
     <!-- end JS -->
     
     <title>HOTEL ABANCAY</title>
@@ -75,29 +76,30 @@
                 <div class="one-half">
                     <h1 id="logo"><a href="#"><img src="{{URL::asset('images/logo.png')}}" alt="Finesse"></a></h1>
                     <p id="tagline">HOTEL ABANCAY - TURISMO DE SALUD</p>
+
                 </div>
                 <!-- end header left -->
                 
                 <!-- begin header right -->
                 <div class="one-half column-last">
                     <!-- begin language switcher -->
-                    <div id="polyglotLanguageSwitcher">
-                        <form action="#">
-                            <select id="polyglot-language-options">
-                                <option id="en" value="en" selected>English</option>
-                                <option id="fr" value="fr">Fran&ccedil;ais</option>
-                                <option id="de" value="de">Deutsch</option>
-                                <option id="it" value="it">Italiano</option>
-                                <option id="es" value="es">Espa&ntilde;ol</option>
-                            </select>
-                        </form>
-                    </div>
+                    
                     <!-- end language switcher -->
                     
                     <!-- begin contact info -->
+                    <div class="contact-info" style="margin-top: -25px;">
+                        
+
+                        {!! Form::open( ['route' => ['lenguaje'] , 'method' => 'POST' ]) !!}
+                        {!! Form::select('type', ['es' => 'Español', 'en' => 'Ingles'], null, 
+                            ['class' => 'form-control chosen-type', 'id' =>'idiomaMultiple', 'name' =>'idiomaMultiple','placeholder' => 'Seleccione Idioma']) !!}
+                            {!! Form::submit('Cambiar Idioma!')!!}
+                        {!! Form::close() !!}
+                        
+                    </div>
                     <div class="contact-info">
-                        <p class="phone">(123) 456-7890</p>
-                       <a href="mailto:info@finesse.com">info@finesse.com</a></p>
+                        <p class="phone">(123) 456-7890
+                        <a href="mailto:info@finesse.com">info@finesse.com</a></p>
                     </div>
                     <!-- end contact info -->
                 </div>
@@ -110,7 +112,7 @@
                 <!-- begin navigation -->
                 <nav id="nav">
                     <ul id="navlist" class="clearfix">
-                        <li class="{{ activeMenu('inicio') }}"><a href="{{route('inicio')}}"  rel="submenu1">Inicio</a>
+                        <li class="{{ activeMenu('inicio') }}"><a href="{{route('inicio')}}"  rel="submenu1">{{trans('menu.Inicio')}}</a>
                             <ul id="submenu1" class="ddsubmenustyle">
                                 <li class="{{ activeMenu('inicio') }}"></li>
                                 <li></li>
@@ -158,8 +160,8 @@
                                 
                             </ul>
                         </li>
-                        
-                        <li class="{{ activeMenu('contacto')  }}"><a href="{{ route('contacto')}}">Contáctenos</a></li>
+                         
+                        <li class="{{ activeMenu('contacto')  }}"><a href="{{ route('contacto')}}">{{ trans('menu.Contacto')}}</a></li>
                     </ul>
                 </nav>
                 <!-- end navigation -->

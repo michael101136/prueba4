@@ -13,7 +13,7 @@
 
 
 Route::get('/',['as' => 'inicio', 'uses' => 'PagesController@inicio']);
-Route::get('inicio/',['as' => 'inicio', 'uses' => 'PagesController@inicio']);
+Route::get('inicio',['as' => 'inicio', 'uses' => 'PagesController@inicio']);
 Route::get('contacto/',['as' => 'contacto', 'uses' => 'PagesController@contacto']);
 Route::get('portafolio/',['as' => 'portafolio', 'uses' => 'PagesController@portafolio']);
 Route::get('nosotros/',['as'=>'nosotros','uses'=>'PagesController@nosotros']);
@@ -25,3 +25,7 @@ Route::get('terapias-complementarias/',['as'=>'terapiascomplementarias','uses'=>
 Route::get('terapias-tradicionales/',['as'=>'terapiastradicionales','uses'=>'PagesController@terapiastradicionales']);
 Route::get('terapias-energeticas/',['as'=>'terapias-energeticas','uses'=>'PagesController@terapiasenergeticas']);
 Route::get('tarifas-paquetes/',['as'=>'tarifas-paquetes','uses'=>'PagesController@tarifaspaquetes']);
+
+Route::Post('lenguaje/{lang?}',['as'=>'lenguaje','uses'=>'PagesController@idioma'])->where([
+        'lang' => 'en|es'
+    ]);;

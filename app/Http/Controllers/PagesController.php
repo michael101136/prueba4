@@ -7,14 +7,28 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
    
+    function __construct()
+    {
+         $this->middleware('verificarIdioma');
+    }
+
 	public function inicio()
 	{
-	
+		
 		   return view('paginas/inicio');
+	}
+	public function idioma(Request $request)
+	{
+		
+
+		session(['lang' => $request->idiomaMultiple]);
+   
+		 return \Redirect::back();
+
 	}
 	public function portafolio()
 	{
-	
+		
 		  return view('paginas/portafolio');
 	}
 	public function contacto()
