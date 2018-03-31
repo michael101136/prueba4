@@ -130,6 +130,19 @@
                                 <li><a href="{{route('habitacionesdobles')}}">Habitaciones matrimoniales</a></li>
                             </ul>
                         </li>
+                        <li class="{{ activeMenu('terapiasalternativas') }}"><a href="#" rel="submenu2">Turismo de salud</a>
+                            <ul id="submenu2" class="ddsubmenustyle">
+                                <li><a href="#">En qué consiste</a></li>
+                                <li><a href="#">Tipos de terapias</a>
+                                    <ul>
+                                        <li><a href="{{route('terapiasalternativas')}}">Alternativas</a></li>
+                                        <li><a href="{{route('terapiascomplementarias')}}">Complementarias</a></li>
+                                        <li><a href="{{route('terapiastradicionales')}}">Tradicionales</a></li>
+                                        <li><a href="{{route('terapias-energeticas')}}">Energéticas</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
    
                         <li class="{{ activeMenu('portafolio') }}"><a href="" rel="submenu4">Portfolio</a>
                             <ul id="submenu4" class="ddsubmenustyle">

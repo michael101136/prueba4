@@ -38,4 +38,20 @@ class PagesController extends Controller
 	{
 		return view('paginas/habitacionesmatrimoniales');
 	}
+	public function terapiasalternativas()
+	{
+		return view('paginas/terapiasalternativas');
+	}
+	public function terapiascomplementarias()
+	{
+		return view('paginas/terapiascomplementarias');
+	}
+	public function terapiastradicionales()
+	{
+		return view('paginas/terapiastradicionales');
+	}
+	public function terapiasenergeticas()
+	{
+		return view('paginas/terapiasenergeticas');
+	}
 }

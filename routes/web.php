@@ -20,3 +20,7 @@ Route::get('nosotros/',['as'=>'nosotros','uses'=>'PagesController@nosotros']);
 Route::get('habitaciones-simples/',['as'=>'habitacionessimples','uses'=>'PagesController@habitacionessimples']);
 Route::get('habitaciones-dobles/',['as'=>'habitacionesdobles','uses'=>'PagesController@habitacionesdobles']);
 Route::get('habitaciones-matrimoniales/',['as'=>'habitacionesmatrimoniales','uses'=>'PagesController@habitacionesmatrimoniales']);
+Route::get('terapias-alternativas/',['as'=>'terapiasalternativas','uses'=>'PagesController@terapiasalternativas']);
+Route::get('terapias-complementarias/',['as'=>'terapiascomplementarias','uses'=>'PagesController@terapiascomplementarias']);
+Route::get('terapias-tradicionales/',['as'=>'terapiastradicionales','uses'=>'PagesController@terapiastradicionales']);
+Route::get('terapias-energeticas/',['as'=>'terapias-energeticas','uses'=>'PagesController@terapiasenergeticas']);
