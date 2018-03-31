@@ -14,7 +14,7 @@
                 <div class="three-fourths">
                 	<div class="entry-slider">
                         <ul>
-                            <li><a class="fancybox" rel="gallery-living-brown" href="images/entries/full-size/living-brown.jpg" title="Image Title"><span class="overlay zoom"></span><img src="images/entries/700x500/living-brown-700x500.png" alt=""></a></li>
+                            <li><a class="fancybox" rel="gallery-living-brown" href="images/entries/full-size/living-brown.jpg" title="Image Title"><span class="overlay zoom"></span><img src="images/terapia-alternativa/alternativa1.jpg" alt=""></a></li>
                             <li style="display: none;"><a class="fancybox" rel="gallery-living-brown" href="images/entries/full-size/dining-and-living-cream.jpg" title="Image Title"><span class="overlay zoom"></span><img src="images/entries/700x500/dining-and-living-cream-700x500.png" alt=""></a></li>
                             <li style="display: none;"><a class="fancybox" rel="gallery-living-brown" href="images/entries/full-size/living-white.jpg" title="Image Title"><span class="overlay zoom"></span><img src="images/entries/700x500/living-white-700x500.png" alt=""></a></li>
                         </ul>
@@ -24,25 +24,59 @@
                 
                 <!-- begin project description -->
                 <div class="one-fourth column-last">
-                    <h3>Overview</h3>
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">Panel with panel-primary class</div>
-                        <div class="panel-body">Panel Content</div>
-                    </div>
-                    <p>Proin ut volutpat elit. Suspendisse ullamcorper vulputate placerat. Nam tincidunt urna nec dui bibendum varius. Nullam odio lectus, tempor eleifend aliquam at, fermentum a magna. Donec in lectus ac ante dignissim elementum vel ut nibh.</p>
+   
+
+
+
+
+   
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        Que son las terapias alternativas</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Collapsible Group 2</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Collapsible Group 3</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+</div>
+                 
                     
-                    <h3>Customer</h3>
-                    <p>&mdash; SmartBiz</p>
-                    
-                    <h3>Year</h3>
-                    <p>&mdash; 2012</p>
-                    
-                    <h3>Technology</h3>
-                    <ul class="check">
-                    	<li>User Interface Design</li>
-                    	<li>HTML/CSS/JavaScript</li>
-                        <li>PHP/MySQL</li>
-                    </ul>
+                   
                     <a href="#" class="button">Visit Website</a>
                 </div>
                 <!-- end project description -->

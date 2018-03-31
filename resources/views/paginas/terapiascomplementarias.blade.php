@@ -14,7 +14,7 @@
                 <div class="three-fourths">
                 	<div class="entry-slider">
                         <ul>
-                            <li><a class="fancybox" rel="gallery-living-brown" href="images/entries/full-size/living-brown.jpg" title="Image Title"><span class="overlay zoom"></span><img src="images/entries/700x500/living-brown-700x500.png" alt=""></a></li>
+                            <li><a class="fancybox" rel="gallery-living-brown" href="images/entries/full-size/living-brown.jpg" title="Image Title"><span class="overlay zoom"></span><img src="images/terapia-complementaria/complementaria1.jpg" alt=""></a></li>
                             <li style="display: none;"><a class="fancybox" rel="gallery-living-brown" href="images/entries/full-size/dining-and-living-cream.jpg" title="Image Title"><span class="overlay zoom"></span><img src="images/entries/700x500/dining-and-living-cream-700x500.png" alt=""></a></li>
                             <li style="display: none;"><a class="fancybox" rel="gallery-living-brown" href="images/entries/full-size/living-white.jpg" title="Image Title"><span class="overlay zoom"></span><img src="images/entries/700x500/living-white-700x500.png" alt=""></a></li>
                         </ul>

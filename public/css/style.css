@@ -365,8 +365,8 @@ ul#navlist li.current a, .no-touch ul#navlist li a:hover, ul#navlist li a.select
 }
 
 .no-touch ul#navlist li a:hover, ul#navlist li a.selected {
-	background-color: #383838 !important;
-	border-color: #383838 !important;
+	background-color: #0f55c1 !important;
+	border-color: #0f55c1 !important;
 }
 
 /* Drop-Down Menus */
@@ -1155,7 +1155,7 @@ ol.comment-list .comment-reply-link {
 /* ---------------------------------------------------------------------- */
 #footer {
 	color: #999;
-	background-color: #383838;	
+	background-color: #0a3a84;	
 	border-top: 5px solid #e5e5e5;
 	margin-top: 60px;
 }
