@@ -57,7 +57,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- end JS -->
     
-    <title>Finesse - Responsive Business Theme</title>
+    <title>HOTEL ABANCAY</title>
 </head>
 
 <body>
@@ -73,8 +73,8 @@
             <section id="header-top" class="clearfix">
                 <!-- begin header left -->
                 <div class="one-half">
-                    <h1 id="logo"><a href="index.html"><img src="{{URL::asset('images/logo.png')}}" alt="Finesse"></a></h1>
-                    <p id="tagline">Responsive Business Theme</p>
+                    <h1 id="logo"><a href="#"><img src="{{URL::asset('images/logo.png')}}" alt="Finesse"></a></h1>
+                    <p id="tagline">HOTEL ABANCAY - TURISMO DE SALUD</p>
                 </div>
                 <!-- end header left -->
                 

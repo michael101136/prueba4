@@ -24,25 +24,26 @@
                 
                 <!-- begin project description -->
                 <div class="one-fourth column-last">
-                    <h3>Overview</h3>
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">Panel with panel-primary class</div>
-                        <div class="panel-body">Panel Content</div>
+                    <h3></h3>
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">HABITACIONES DOBLES</div>
+                        <div class="panel-body">
+                            <div align="justify"><p>El hotel Abancay, ofrece varios tipos de habitaciones y una de ellas son las habitaciones dobles para que nuestros clientes se sientan como en su casa.</p></div>
+                            <br>
+                            <h3>Servicios</h3><br>
+                            <ul class="check">
+                                <li>Internet - Wifi</li>
+                                <li>Cable</li>
+                                <li>Servicio de desayuno cortesía del hotel</li>
+                                <li>Agua caliente las 24 horas del día</li>
+                                <li>Baño privado</li>
+                                <li>Cochera gratis</li>
+                            </ul>
+                            <h3>Precio</h3><br>
+                            <li>S/. 60</li>
+                        </div>
                     </div>
-                    <p>Proin ut volutpat elit. Suspendisse ullamcorper vulputate placerat. Nam tincidunt urna nec dui bibendum varius. Nullam odio lectus, tempor eleifend aliquam at, fermentum a magna. Donec in lectus ac ante dignissim elementum vel ut nibh.</p>
                     
-                    <h3>Customer</h3>
-                    <p>&mdash; SmartBiz</p>
-                    
-                    <h3>Year</h3>
-                    <p>&mdash; 2012</p>
-                    
-                    <h3>Technology</h3>
-                    <ul class="check">
-                    	<li>User Interface Design</li>
-                    	<li>HTML/CSS/JavaScript</li>
-                        <li>PHP/MySQL</li>
-                    </ul>
                     <a href="#" class="button">Visit Website</a>
                 </div>
                 <!-- end project description -->
