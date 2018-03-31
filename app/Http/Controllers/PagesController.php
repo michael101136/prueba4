@@ -54,4 +54,8 @@ class PagesController extends Controller
 	{
 		return view('paginas/terapiasenergeticas');
 	}
+	public function tarifaspaquetes()
+	{
+		return view('paginas/tarifaspaquetes');
+	}
 }

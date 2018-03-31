@@ -53,7 +53,8 @@
                     <div class="entry-content">
                         <p>Gallery project with slider and lightbox.</p>
                     </div>
-				</li>
+                </li>
+                
                 <li data-id="id-4" data-type="animation" class="entry one-fourth">
                 	<div class="entry-video">
                         <video width="220" height="130" style="width: 100%; height: 100%;" poster="images/entries/220x130/dining-and-living-cream-220x130.png" controls preload="none">

@@ -127,7 +127,7 @@
                             <ul id="submenu4" class="ddsubmenustyle">
 
                                 <li><a href="{{route('habitaciones-simples')}}">Habitaciones simples</a></li>
-                                <li><a href="{{route('habitacionesdobles')}}">Habitaciones dobles</a></li>
+                                <li><a href="{{route('habitaciones-dobles')}}">Habitaciones dobles</a></li>
                                 <li><a href="{{route('habitacionesmatrimoniales')}}">Habitaciones matrimoniales</a></li>
 
                             </ul>
@@ -143,17 +143,23 @@
                                         <li><a href="{{route('terapias-energeticas')}}">Energéticas</a></li>
                                     </ul>
                                 </li>
+                                <li><a href="#">Testimonios</a></li>
                             </ul>
                         </li>
-   
-                        <li class="{{ activeMenu('portafolio') }}"><a href="" rel="submenu4">Portfolio</a>
+                        <li class="{{ activeMenu('tarifas-paquetes') }}"><a href="#" rel="submenu4">Paquetes</a>
                             <ul id="submenu4" class="ddsubmenustyle">
-                                <li><a href="{{route('portafolio')}}">Portafolio</a></li>
+                                <li><a href="{{route('tarifas-paquetes')}}">Tarifas</a></li>
+                            </ul>
+                        </li>
+                        <li class="{{ activeMenu('portafolio') }}"><a href="" rel="submenu4">Portafolio</a>
+                            <ul id="submenu4" class="ddsubmenustyle">
+                                <li><a href="{{route('portafolio')}}">Portafolio del hotel</a></li>
+                                <li><a href="{{route('portafolio')}}">Portafolio del turismo salud</a></li>
                                 
                             </ul>
                         </li>
                         
-                        <li class="{{ activeMenu('contacto')  }}"><a href="{{ route('contacto')}}">Contact</a></li>
+                        <li class="{{ activeMenu('contacto')  }}"><a href="{{ route('contacto')}}">Contáctenos</a></li>
                     </ul>
                 </nav>
                 <!-- end navigation -->
