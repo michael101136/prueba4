@@ -138,7 +138,7 @@
                         </li>
                         <li class="{{ activeMenu('terapiasalternativas') }}"><a href="#" rel="submenu2">{{trans('menu.Turismo_salud')}}</a>
                             <ul id="submenu2" class="ddsubmenustyle">
-                                <li><a href="#">{{trans('menu.Acerca_de')}}</a></li>
+                                <li><a href="{{route('turismo-salud')}}">{{trans('menu.Acerca_de')}}</a></li>
                                 <li><a href="#">{{trans('menu.Tipo_terapia')}}</a>
                                     <ul>
                                         <li><a href="{{route('terapiasalternativas')}}">{{trans('menu.Tipo_alternativa')}}</a></li>

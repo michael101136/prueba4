@@ -25,6 +25,8 @@ Route::get('terapias-complementarias/',['as'=>'terapiascomplementarias','uses'=>
 Route::get('terapias-tradicionales/',['as'=>'terapiastradicionales','uses'=>'PagesController@terapiastradicionales']);
 Route::get('terapias-energeticas/',['as'=>'terapias-energeticas','uses'=>'PagesController@terapiasenergeticas']);
 Route::get('tarifas-paquetes/',['as'=>'tarifas-paquetes','uses'=>'PagesController@tarifaspaquetes']);
+Route::get('turismo-salud/',['as'=>'turismo-salud','uses'=>'PagesController@turismosalud']);
+
 
 Route::Post('lenguaje/{lang?}',['as'=>'lenguaje','uses'=>'PagesController@idioma'])->where([
         'lang' => 'en|es'

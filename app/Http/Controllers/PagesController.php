@@ -72,4 +72,8 @@ class PagesController extends Controller
 	{
 		return view('paginas/tarifaspaquetes');
 	}
+	public function turismosalud()
+	{
+		return view('paginas/turismosalud');
+	}
 }
