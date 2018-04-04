@@ -121,44 +121,44 @@
                             </ul>
                         </li>
                        
-                        <li class="{{ activeMenu('nosotros') }}"><a href="#" rel="submenu4">Quienes somos</a>
+                        <li class="{{ activeMenu('nosotros') }}"><a href="#" rel="submenu4">{{trans('menu.Empresa')}}</a>
                             <ul id="submenu4" class="ddsubmenustyle">
-                                <li><a href="{{route('nosotros')}}">Nosotros</a></li>
+                                <li><a href="{{route('nosotros')}}">{{trans('menu.Nosotros')}}</a></li>
                             </ul>
                         </li>
 
-                        <li class="{{ activeMenu('habitaciones-simples') }}"><a href="#" rel="submenu4">Servicios Hotel</a>
+                        <li class="{{ activeMenu('habitaciones-simples') }}"><a href="#" rel="submenu4">{{trans('menu.Hotel')}}</a>
                             <ul id="submenu4" class="ddsubmenustyle">
 
-                                <li><a href="{{route('habitaciones-simples')}}">Habitaciones simples</a></li>
-                                <li><a href="{{route('habitaciones-dobles')}}">Habitaciones dobles</a></li>
-                                <li><a href="{{route('habitacionesmatrimoniales')}}">Habitaciones matrimoniales</a></li>
+                                <li><a href="{{route('habitaciones-simples')}}">{{trans('menu.Habitacion_simple')}}</a></li>
+                                <li><a href="{{route('habitaciones-dobles')}}">{{trans('menu.Habitacion_doble')}}</a></li>
+                                <li><a href="{{route('habitacionesmatrimoniales')}}">{{trans('menu.Habitacion_matrimonial')}}</a></li>
 
                             </ul>
                         </li>
-                        <li class="{{ activeMenu('terapiasalternativas') }}"><a href="#" rel="submenu2">Turismo de salud</a>
+                        <li class="{{ activeMenu('terapiasalternativas') }}"><a href="#" rel="submenu2">{{trans('menu.Turismo_salud')}}</a>
                             <ul id="submenu2" class="ddsubmenustyle">
-                                <li><a href="#">En qué consiste</a></li>
-                                <li><a href="#">Tipos de terapias</a>
+                                <li><a href="#">{{trans('menu.Acerca_de')}}</a></li>
+                                <li><a href="#">{{trans('menu.Tipo_terapia')}}</a>
                                     <ul>
-                                        <li><a href="{{route('terapiasalternativas')}}">Alternativas</a></li>
-                                        <li><a href="{{route('terapiascomplementarias')}}">Complementarias</a></li>
-                                        <li><a href="{{route('terapiastradicionales')}}">Tradicionales</a></li>
-                                        <li><a href="{{route('terapias-energeticas')}}">Energéticas</a></li>
+                                        <li><a href="{{route('terapiasalternativas')}}">{{trans('menu.Tipo_alternativa')}}</a></li>
+                                        <li><a href="{{route('terapiascomplementarias')}}">{{trans('menu.Tipo_complementaria')}}</a></li>
+                                        <li><a href="{{route('terapiastradicionales')}}">{{trans('menu.Tipo_tradicional')}}</a></li>
+                                        <li><a href="{{route('terapias-energeticas')}}">{{trans('menu.Tipo_energetica')}}</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Testimonios</a></li>
+                                <li><a href="#">{{trans('menu.Testimonio')}}</a></li>
                             </ul>
                         </li>
-                        <li class="{{ activeMenu('tarifas-paquetes') }}"><a href="#" rel="submenu4">Paquetes</a>
+                        <li class="{{ activeMenu('tarifas-paquetes') }}"><a href="#" rel="submenu4">{{trans('menu.Paquete')}}</a>
                             <ul id="submenu4" class="ddsubmenustyle">
-                                <li><a href="{{route('tarifas-paquetes')}}">Tarifas</a></li>
+                                <li><a href="{{route('tarifas-paquetes')}}">{{trans('menu.Tarifa')}}</a></li>
                             </ul>
                         </li>
-                        <li class="{{ activeMenu('portafolio') }}"><a href="" rel="submenu4">Portafolio</a>
+                        <li class="{{ activeMenu('portafolio') }}"><a href="" rel="submenu4">{{trans('menu.Portafolio')}}</a>
                             <ul id="submenu4" class="ddsubmenustyle">
-                                <li><a href="{{route('portafolio')}}">Portafolio del hotel</a></li>
-                                <li><a href="{{route('portafolio')}}">Portafolio del turismo salud</a></li>
+                                <li><a href="{{route('portafolio')}}">{{trans('menu.Portafolio_hotel')}}</a></li>
+                                <li><a href="{{route('portafolio')}}">{{trans('menu.Portafolio_turismo')}}</a></li>
                                 
                             </ul>
                         </li>
