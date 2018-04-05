@@ -6,35 +6,35 @@
                     <div class="flexslider">
                         <ul class="slides">
                             <li>
-                                <img src="{{URL::asset('images/slider/slides/living-white-940x350.png')}}" alt="White Living Room">
+                                <img src="{{URL::asset('images/slider/slides/slider1.jpg')}}" alt="White Living Room">
                                 <div class="flex-caption">
                                     <h2>Responsive Layout</h2>
                                     <p>You can describe your slides using captions. This is an example of a caption with <a href="#">a link</a>.</p>
                                 </div>
                             </li>
                             <li>
-                                <img src="{{URL::asset('images/slider/slides/villa-940x350.png')}}" alt="Villa">
+                                <img src="{{URL::asset('images/slider/slides/slider2.jpg')}}" alt="Villa">
                                 <div class="flex-caption">
                                     <h2>HTML5 &amp; CSS3 Code</h2>
                                     <p>You can describe your slides using captions. This is an example of a caption with <a href="#">a link</a>.</p>
                                 </div>
                             </li>
                             <li>
-                                <img src="{{URL::asset('images/slider/slides/building-940x350.png')}}" alt="Building">
+                                <img src="{{URL::asset('images/slider/slides/slider3.jpg')}}" alt="Building">
                                 <div class="flex-caption">
                                     <h2>Clean Design</h2>
                                     <p>You can describe your slides using captions. This is an example of a caption with <a href="#">a link</a>.</p>
                                 </div>
                             </li>
                             <li>
-                                <img src="{{URL::asset('images/slider/slides/living-brown-940x350.png')}}" alt="Brown Living Room">
+                                <img src="{{URL::asset('images/slider/slides/slider4.jpg')}}" alt="Brown Living Room">
                                 <div class="flex-caption">
                                     <h2>Touch Enabled</h2>
                                     <p>You can describe your slides using captions. This is an example of a caption with <a href="#">a link</a>.</p>
                                 </div>
                             </li>
                             <li>
-                                <img src="{{URL::asset('images/slider/slides/dining-brown-940x350.png')}}" alt="Brown Dining Room">
+                                <img src="{{URL::asset('images/slider/slides/slider5.jpg')}}" alt="Brown Dining Room">
                                 <div class="flex-caption">
                                     <h2>Easy to Customize</h2>
                                     <p>You can describe your slides using captions. This is an example of a caption with <a href="#">a link</a>.</p>

@@ -319,9 +319,9 @@ mark {
 	border: 1px solid #e5e5e5;
 	margin-bottom: 15px;
 	background: #ffffff; /* Old browsers */
-	background: -moz-linear-gradient(top,  #ffffff 0%, #f2f2f2 100%); /* FF3.6+ */
+	background: -moz-linear-gradient(top,  #F0F4F1 0%, #F0F4F1 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f2f2f2)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #ffffff 0%,#f2f2f2 100%); /* Chrome10+,Safari5.1+ */
+	background: -webkit-linear-gradient(top,  #F0F4F1 0%,#F0F4F1 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(top,  #ffffff 0%,#f2f2f2 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top,  #ffffff 0%,#f2f2f2 100%); /* IE10+ */
 	background: linear-gradient(top,  #ffffff 0%,#f2f2f2 100%); /* W3C */
@@ -365,8 +365,8 @@ ul#navlist li.current a, .no-touch ul#navlist li a:hover, ul#navlist li a.select
 }
 
 .no-touch ul#navlist li a:hover, ul#navlist li a.selected {
-	background-color: #0f55c1 !important;
-	border-color: #0f55c1 !important;
+	background-color: #558F6E !important;
+	border-color: #558F6E !important;
 }
 
 /* Drop-Down Menus */
@@ -392,11 +392,11 @@ ul#navlist li.current a, .no-touch ul#navlist li a:hover, ul#navlist li a.select
 
 .ddsubmenustyle li a {
 	display: block;
-	color: #fff;
-	background-color: #383838;
+	color: #000;
+	background-color: #f0f4f1;
 	padding: 8px 15px;
-	border-top: 1px solid #4d4d4d;
-	border-bottom: 1px solid #262626;
+	/*border-top: 1px solid #4d4d4d;
+	border-bottom: 1px solid #262626;*/
 }
 
 .ddsubmenustyle > ul > li:first-child a {	
@@ -1154,8 +1154,8 @@ ol.comment-list .comment-reply-link {
 /* Footer
 /* ---------------------------------------------------------------------- */
 #footer {
-	color: #999;
-	background-color: #0a3a84;	
+	color: #ffffff;
+	background-color: #207245;	
 	border-top: 5px solid #e5e5e5;
 	margin-top: 60px;
 }
