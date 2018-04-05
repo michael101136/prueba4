@@ -93,8 +93,8 @@
                         
 
                         {!! Form::open( ['route' => ['lenguaje'] , 'method' => 'POST' ]) !!}
-                        {!! Form::select('type', ['es' => 'Español', 'en' => 'Ingles'], null, 
-                            ['class' => 'form-control chosen-type', 'id' =>'idiomaMultiple', 'name' =>'idiomaMultiple','placeholder' => 'Seleccione Idioma']) !!}
+                        {!! Form::select('type', ['es' => 'Español', 'en' => 'Ingles'], session('lang'), 
+                            ['class' => 'form-control chosen-type', 'id' =>'idiomaMultiple', 'name' =>'idiomaMultiple']) !!}
                            {!! Form::submit('Cambiar Idioma!', array('class' => 'btn'))!!}
                         {!! Form::close() !!}
                         
