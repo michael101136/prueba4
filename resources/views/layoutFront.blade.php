@@ -193,47 +193,29 @@
             <div id="footer-top">
                 <div class="one-fourth">
                     <div class="widget">
-                        <h3>Nosotros</h3>
-                        <p>Finesse is a responsive business and portfolio theme carefully handcrafted using the latest technologies.</p>
-                        <p>It features a clean design, as well as extended functionality that will come in very handy.</p>
+                        <h3>{{trans('footer.Nosotros')}}</h3>
+                        <p align="justify">{{trans('footer.Pie_nosotros')}}</p>
+                      
                     </div>
                 </div>
                 <div class="one-fourth">
-                    <div class="widget latest-posts">
-                        <h3>Latest Posts</h3>
-                        <ul>
-                            <li>
-                                <a href="blog-post.html">How to Make Innovative Ideas Happen</a>
-                                <span>March 10, 2012</span>
-                            </li>
-                            <li> 
-                                <a href="blog-post.html">Web Development for the iPhone and iPad</a>
-                                <span>March 10, 2012</span>
-                            </li>
-                        </ul>
+                    <div class="widget contact-info">
+                        <h3>{{trans('footer.Contacto')}}</h3>
+                        <p class="address"><strong>{{trans('footer.Direccion')}}:</strong> Av. Nuñez N° 705 Abancay-Apurímac</p>
+                        <p class="phone"><strong>{{trans('footer.Telefono')}}:</strong> (083) 321812</p>
+                        <p class="email"><strong>{{trans('footer.Correo')}}:</strong> <a href="mailto:info@finesse.com">info@finesse.com</a></p>
                     </div>
                 </div>
-                <div class="one-fourth">
-                    <div class="widget twitter-widget">
-                        <h3>Latest Tweets</h3>
-                        <div class="tweet"></div>
-                    </div>
-                </div>
+ 
                 <div class="one-fourth column-last">
                     <div class="widget contact-info">
-                        <h3>Contáctenos</h3>
-                        <p class="address"><strong>Dirección:</strong> Av. Nuñez N° 705 Abancay-Apurímac</p>
-                        <p class="phone"><strong>Teléfono:</strong> (123) 456-7890</p>
-                        <p class="email"><strong>Email:</strong> <a href="mailto:info@finesse.com">info@finesse.com</a></p>
+                        <h3>{{trans('footer.Redes_sociales')}}</h3>
+                        <p class="address">{{trans('footer.Redes_concepto')}}</p>
+
                         <div class="social-links">
-                            <h4>Follow Us</h4>
                             <ul>
                                 <li class="twitter"><a href="#" title="Twitter" target="_blank">Twitter</a></li>
                                 <li class="facebook"><a href="#" title="Facebook" target="_blank">Facebook</a></li>
-                                <li class="google"><a href="#" title="Google+" target="_blank">Google+</a></li>
-                                <li class="youtube"><a href="#" title="YouTube" target="_blank">YouTube</a></li>
-                                <li class="skype"><a href="#" title="Skype" target="_blank">Skype</a></li>
-                                <li class="rss"><a href="#" title="RSS" target="_blank">RSS</a></li>
                             </ul>
                         </div>
                     </div>
@@ -244,20 +226,7 @@
             <!-- begin footer bottom -->
             <div id="footer-bottom">
                 <div class="one-half">
-                    <p>Copyright &copy; 2012 Finesse. Created by <a href="http://themeforest.net/user/ixtendo">Ixtendo</a>.</p>
-                </div>
-
-                <div class="one-half column-last">
-                    <nav id="footer-nav">
-                        <ul>
-                            <li><a href="index.html">Home</a> &middot;</li>
-                            <li><a href="about-us.html">Templates</a> &middot;</li>
-                            <li><a href="elements.html">Features</a> &middot;</li>
-                            <li><a href="portfolio.html">Portfolio</a> &middot;</li>
-                            <li><a href="blog.html">Blog</a> &middot;</li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
+                    <p>Copyright &copy; 2018. Elaborado por <a href="http://www.spaziour.com/">Spaziour</a>.</p>
                 </div>
             </div>
             <!-- end footer bottom -->

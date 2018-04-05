@@ -2,7 +2,7 @@
 @section('contenido')
     <!-- begin page header -->
     <header id="page-header">
-            	<h1 id="page-title">TERAPIAS ALTERNATIVAS</h1>	
+            	<h1 id="page-title">{{trans('menu.Tipo_alternativa')}}</h1>	
             </header>
             <!-- end page header -->
         	
@@ -24,12 +24,6 @@
                 
                 <!-- begin project description -->
                 <div class="one-fourth column-last">
-   
-
-
-
-
-   
 <div class="panel-group" id="accordion">
   <div class="panel panel-default">
     <div class="panel-heading">

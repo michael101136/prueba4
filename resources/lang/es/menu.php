@@ -21,5 +21,6 @@ return array(
 	'Portafolio'=>'Portafolio',
 	'Portafolio_hotel'=>'Portafolio del hotel',
 	'Portafolio_turismo'=>'Porfafolio del turismo de salud',
-	'Contacto' => 'Contacto'
+	'Contacto' => 'Contacto',
+	'Contenido_turismo_salud'=>'EL TURISMO EN SALUD, CONSISTE EN QUE PERSONAS QUE SIENTEN ALGUNA DOLENCIA Y QUE DESEAN RESTRABLECER SU SALUDA A TRAVÉS DE LAS TERAPIAS ALTERNATIVAS, COMPLEMENTARIAS, TRADICIONALES O ENERGÉTICAS PUEDEN HACERSE TRATAR CON ALGUNA DE ÉSTAS. TAMBIÉN REALIZAMOS TERAPIA CON LASER MEDICAL.'	
 );

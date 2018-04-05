@@ -2,7 +2,7 @@
 @section('contenido')
     <!-- begin page header -->
     <header id="page-header">
-            	<h1 id="page-title">HABITACIONES MATRIMONIALES</h1>	
+            	<h1 id="page-title">{{trans('menu.Habitacion_matrimonial')}}</h1>	
             </header>
             <!-- end page header -->
         	

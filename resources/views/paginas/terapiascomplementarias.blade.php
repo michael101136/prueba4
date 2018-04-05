@@ -2,7 +2,7 @@
 @section('contenido')
     <!-- begin page header -->
     <header id="page-header">
-            	<h1 id="page-title">TERAPIAS COMPLEMENTARIAS</h1>	
+            	<h1 id="page-title">{{trans('menu.Tipo_complementaria')}}</h1>	
             </header>
             <!-- end page header -->
         	

@@ -2,7 +2,7 @@
 @section('contenido')
     <!-- begin page header -->
     <header id="page-header">
-            	<h1 id="page-title">HABITACIONES SIMPLES</h1>	
+            	<h1 id="page-title">{{trans('menu.Habitacion_simple')}}</h1>	
             </header>
             <!-- end page header -->
         	
