@@ -75,9 +75,9 @@
             <!-- begin header top -->
             <section id="header-top" class="clearfix">
                 <!-- begin header left -->
-                <div class="one-half">
+                <div class="one-half" style="margin-top: -20px;">
                     <h1 id="logo"><a href="#"><img src="{{URL::asset('images/logo.png')}}" alt="Finesse"></a></h1>
-                    <p id="tagline">HOTEL ABANCAY - TURISMO DE SALUD</p>
+                    <p id="tagline" style="margin-top: 30px;"><strong>HOTEL ABANCAY - TURISMO DE SALUD</strong></p><br/>
 
                 </div>
                 <!-- end header left -->
@@ -95,7 +95,7 @@
                         {!! Form::open( ['route' => ['lenguaje'] , 'method' => 'POST' ]) !!}
                         {!! Form::select('type', ['es' => 'Español', 'en' => 'Ingles'], null, 
                             ['class' => 'form-control chosen-type', 'id' =>'idiomaMultiple', 'name' =>'idiomaMultiple','placeholder' => 'Seleccione Idioma']) !!}
-                            {!! Form::submit('Cambiar Idioma!')!!}
+                           {!! Form::submit('Cambiar Idioma!', array('class' => 'btn'))!!}
                         {!! Form::close() !!}
                         
                     </div>
