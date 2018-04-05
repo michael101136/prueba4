@@ -67,7 +67,7 @@
 <!-- begin container -->
 <?php function activeMenu($url)
     {
-        return request()->is($url) ? 'current' : '';
+        return request()->is($url.'*') ? 'current' : '';
     } ?>
 <div id="wrap">
     <!-- begin header -->
@@ -127,23 +127,23 @@
                             </ul>
                         </li>
 
-                        <li class="{{ activeMenu('habitaciones-simples') }}"><a href="#" rel="submenu4">{{trans('menu.Hotel')}}</a>
+                        <li class="{{ activeMenu('habitaciones') }}"><a href="#" rel="submenu4">{{trans('menu.Hotel')}}</a>
                             <ul id="submenu4" class="ddsubmenustyle">
 
-                                <li><a href="{{route('habitaciones-simples')}}">{{trans('menu.Habitacion_simple')}}</a></li>
-                                <li><a href="{{route('habitaciones-dobles')}}">{{trans('menu.Habitacion_doble')}}</a></li>
-                                <li><a href="{{route('habitacionesmatrimoniales')}}">{{trans('menu.Habitacion_matrimonial')}}</a></li>
+                                <li><a  href="{{route('habitaciones-simples')}}">{{trans('menu.Habitacion_simple')}}</a></li>
+                                <li><a  href="{{route('habitaciones-dobles')}}">{{trans('menu.Habitacion_doble')}}</a></li>
+                                <li><a  href="{{route('habitacionesmatrimoniales')}}">{{trans('menu.Habitacion_matrimonial')}}</a></li>
 
                             </ul>
                         </li>
-                        <li class="{{ activeMenu('terapiasalternativas') }}"><a href="#" rel="submenu2">{{trans('menu.Turismo_salud')}}</a>
+                        <li class="{{ activeMenu('terapias') }}"><a href="#" rel="submenu2">{{trans('menu.Turismo_salud')}}</a>
                             <ul id="submenu2" class="ddsubmenustyle">
-                                <li><a href="{{route('turismo-salud')}}">{{trans('menu.Acerca_de')}}</a></li>
+                                <li><a href="{{route('terapias-turismosalud')}}">{{trans('menu.Acerca_de')}}</a></li>
                                 <li><a href="#">{{trans('menu.Tipo_terapia')}}</a>
                                     <ul>
-                                        <li><a href="{{route('terapiasalternativas')}}">{{trans('menu.Tipo_alternativa')}}</a></li>
-                                        <li><a href="{{route('terapiascomplementarias')}}">{{trans('menu.Tipo_complementaria')}}</a></li>
-                                        <li><a href="{{route('terapiastradicionales')}}">{{trans('menu.Tipo_tradicional')}}</a></li>
+                                        <li><a href="{{route('terapias-alternativas')}}">{{trans('menu.Tipo_alternativa')}}</a></li>
+                                        <li><a href="{{route('terapias-complementarias')}}">{{trans('menu.Tipo_complementaria')}}</a></li>
+                                        <li><a href="{{route('terapias-tradicionales')}}">{{trans('menu.Tipo_tradicional')}}</a></li>
                                         <li><a href="{{route('terapias-energeticas')}}">{{trans('menu.Tipo_energetica')}}</a></li>
                                     </ul>
                                 </li>
