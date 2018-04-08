@@ -7,23 +7,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
        
-    <!-- end meta -->
-    
-    <!-- begin CSS -->
 
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />    
-    <link rel="stylesheet" type="text/css" id="theme" href="{{ asset('/css/back/theme-default.css')}}">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />    
+        <link rel="stylesheet" type="text/css" id="theme" href="{{ asset('/css/back/theme-blue.css')}}">
 
-        <script src="{{ asset('/js/jquery-1.7.2.min.js')}}" type="text/javascript"></script> 
-        <script type="text/javascript" src="{{ asset('js/back/plugins/jquery/jquery-ui.min.js')}}"></script>         
-        <script type="text/javascript" src="{{ asset('js/back/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js')}}"></script>
-        <script type="text/javascript" src="{{ asset('js/back/plugins/scrolltotop/scrolltopcontrol.js')}}"></script>                   
-        <script type="text/javascript" src="{{ asset('js/back/plugins.js')}}"></script>        
-        <script type="text/javascript" src="{{ asset('js/back/actions.js')}}"></script>
-        
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
-
-    <!-- end JS -->
     
     <title>HOTEL ABANCAY</title>
 </head>
@@ -107,7 +94,7 @@
                             <div class="panel-body list-group list-group-contacts scroll" style="height: 200px;">
                                 <a href="#" class="list-group-item">
                                     <div class="list-group-status status-online"></div>
-                                    <img src="assets/images/users/user2.jpg" class="pull-left" alt="John Doe"/>
+                                    <img src="{{URL::asset('/assets/images/users/user2.jpg')}}" class="pull-left" alt="John Doe"/>
                                     <span class="contacts-title">John Doe</span>
                                     <p>Praesent placerat tellus id augue condimentum</p>
                                 </a>
@@ -119,13 +106,13 @@
                                 </a>
                                 <a href="#" class="list-group-item">
                                     <div class="list-group-status status-away"></div>
-                                    <img src="assets/images/users/user3.jpg" class="pull-left" alt="Nadia Ali"/>
+                                    <img src="{{URL::asset('/assets/images/users/user3.jpg')}}" class="pull-left" alt="Nadia Ali"/>
                                     <span class="contacts-title">Nadia Ali</span>
                                     <p>Mauris vel eros ut nunc rhoncus cursus sed</p>
                                 </a>
                                 <a href="#" class="list-group-item">
                                     <div class="list-group-status status-offline"></div>
-                                    <img src="assets/images/users/user6.jpg" class="pull-left" alt="Darth Vader"/>
+                                    <img src="{{URL::asset('/assets/images/users/user6.jpg')}}" class="pull-left" alt="Darth Vader"/>
                                     <span class="contacts-title">Darth Vader</span>
                                     <p>I want my money back!</p>
                                 </a>
@@ -195,11 +182,11 @@
                 
                 <!-- PAGE CONTENT WRAPPER -->
                 <div class="page-content-wrap">
-                    
-                <section id="content" class="container clearfix">
-                @yield('contenido')
-                </section>
- 
+                        
+                    <section id="content" class="container clearfix">
+                    @yield('contenido')
+                    </section>
+     
                     
                 </div>
                 <!-- END PAGE CONTENT WRAPPER -->                                
@@ -208,6 +195,28 @@
 
 
 </div>
+    
+    <!-- START SCRIPTS -->
+        <!-- START PLUGINS -->
+        <script type="text/javascript" src="{{ asset('/js/back/plugins/jquery/jquery.min.js')}}"></script>
+        <script type="text/javascript" src="{{ asset('/js/back/plugins/jquery/jquery-ui.min.js')}}"></script>
+        <script type="text/javascript" src="{{ asset('/js/back/plugins/bootstrap/bootstrap.min.js')}}"></script>        
+        <!-- END PLUGINS -->                
+
+        <!-- THIS PAGE PLUGINS -->
+        <script type='text/javascript' src="{{ asset('/js/back/plugins/icheck/icheck.min.js')}}"></script>
+        <script type="text/javascript" src="{{ asset('/js/back/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js')}}"></script>
+        
+        <script type="text/javascript" src="{{ asset('/js/back/plugins/datatables/jquery.dataTables.min.js')}}"></script>    
+        <!-- END PAGE PLUGINS -->
+
+        <!-- START TEMPLATE -->
+        <script type="text/javascript" src="{{ asset('/js/back/settings.js')}}"></script>
+        
+        <script type="text/javascript" src="{{ asset('/js/back/plugins.js')}}"></script>        
+        <script type="text/javascript" src="{{ asset('/js/back/actions.js')}}"></script>        
+        <!-- END TEMPLATE -->
+    <!-- END SCRIPTS --> 
 
 </body>
 </html>
