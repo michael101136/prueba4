@@ -26,9 +26,9 @@
                 <div class="one-fourth column-last">
                     <h3></h3>
                     <div class="panel panel-info class">
-                        <div class="panel-heading">HABITACIONES DOBLES</div>
+                        <div class="panel-heading"><strong>{{trans('menu.Habitacion_doble')}}</strong></div>
                         <div class="panel-body">
-                            <div align="justify"><p>El hotel Abancay, ofrece varios tipos de habitaciones y una de ellas son las habitaciones dobles para que nuestros clientes se sientan como en su casa.</p></div>
+                            <div align="justify"><p>{{trans('contenido.Contenido_habitaciondoble')}}</p></div>
                             <br>
                             <h3>Servicios</h3><br>
                             <ul class="check">

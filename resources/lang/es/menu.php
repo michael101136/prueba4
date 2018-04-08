@@ -4,6 +4,7 @@ return array(
 	'Inicio' => 'Inicio',
 	'Empresa' => 'Nuestra empresa',
 	'Nosotros'=> 'Nosotros',
+	'Biografia'=>'Biografía',
 	'Hotel'=>'Servicios del hotel',
 	'Habitacion_simple'=>'Habitaciones simples',
 	'Habitacion_doble'=>'Habitaciones dobles',

@@ -14,9 +14,9 @@
                 <div class="three-fourths">
                 	<div class="entry-slider">
                         <ul>
-                            <li><a class="fancybox" rel="gallery-living-brown" href="images/entries/full-size/living-brown.jpg" title="Image Title"><span class="overlay zoom"></span><img src="images/entries/700x500/matrimonial1.jpg" alt=""></a></li>
-                            <li style="display: none;"><a class="fancybox" rel="gallery-living-brown" href="images/entries/full-size/dining-and-living-cream.jpg" title="Image Title"><span class="overlay zoom"></span><img src="images/entries/700x500/dining-and-living-cream-700x500.png" alt=""></a></li>
-                            <li style="display: none;"><a class="fancybox" rel="gallery-living-brown" href="images/entries/full-size/living-white.jpg" title="Image Title"><span class="overlay zoom"></span><img src="images/entries/700x500/living-white-700x500.png" alt=""></a></li>
+                            <li><a class="fancybox" rel="gallery-living-brown" href="images/entries/full-size/matrimonial1.jpg" title="Image Title"><span class="overlay zoom"></span><img src="images/entries/700x500/matrimonial2.jpg" alt=""></a></li>
+                            <li style="display: none;"><a class="fancybox" rel="gallery-living-brown" href="images/entries/full-size/dining-and-living-cream.jpg" title="Image Title"><span class="overlay zoom"></span><img src="images/entries/700x500/matrimonial1.jpg" alt=""></a></li>
+                            <li style="display: none;"><a class="fancybox" rel="gallery-living-brown" href="images/entries/full-size/living-white.jpg" title="Image Title"><span class="overlay zoom"></span><img src="images/entries/700x500/desayuno.jpg" alt=""></a></li>
                         </ul>
                     </div>
                 </div>
@@ -26,9 +26,9 @@
                 <div class="one-fourth column-last">
                     <h3></h3>
                     <div class="panel panel-info class">
-                        <div class="panel-heading">HABITACIONES MATRIMONIALES</div>
+                        <div class="panel-heading"><strong>{{trans('menu.Habitacion_matrimonial')}}</strong></div>
                         <div class="panel-body">
-                            <div align="justify"><p>El hotel Abancay, ofrece varios tipos de habitaciones y una de ellas son las habitaciones matrimoniales para que nuestros clientes se sientan como en su casa.</p></div>
+                            <div align="justify"><p>{{trans('contenido.Contenido_habitacionmatrimonial')}}</p></div>
                             <br>
                             <h3>Servicios</h3><br>
                             <ul class="check">

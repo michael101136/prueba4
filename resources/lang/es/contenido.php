@@ -1,0 +1,8 @@
+<?php
+return array(	
+    'Contenido_turismo_salud'=>'EL TURISMO EN SALUD, CONSISTE EN QUE PERSONAS QUE SIENTEN ALGUNA DOLENCIA Y QUE DESEAN RESTRABLECER SU SALUDA A TRAVÉS DE LAS TERAPIAS ALTERNATIVAS, COMPLEMENTARIAS, TRADICIONALES O ENERGÉTICAS PUEDEN HACERSE TRATAR CON ALGUNA DE ÉSTAS. TAMBIÉN REALIZAMOS TERAPIA CON LASER MEDICAL.',
+    'Contenido_biografia'=>'INOCENCIA ALVITEZ LLAYCAY, NACIÓ EL 28 DE DICIEMBRE DE 1955, EN UN CENTRO POBLADO DE SAN MATEO, DISTRITO DE TINTAY PROVINCIA DE AYMARAES, DEPARTAMENTO DE APURÍMAC SIENDO LA TERCERA HIJA DE ANGELA ALVITEZ ROBLES Y DE GABINO HUANCA ANAMPA.  EN UN MOMENTO DE ABANDONO MORAL Y MATERIAL, VIVE EN EL ORFELINATO DE ABANCAY Y POSTERIORMENTE EN EL ORFANATO DE CHUQUIBAMBILLA, GRAU APURÍMAC. LE DESCUBREN A LOS 8 AÑOS EL DON NATURAL DE SANAR Y CURAR EN LA CIUDAD DE ABANCAY. REALIZÓ SUS ESTUDIOS SUPERIORES EN EL INSTITUTO TECNOLÓGICO LA SALLE DE ABANCAY Y TRABAJO 20 AÑOS COMO DOCENTE Y ACTUALMENTE SE DEDICA A LAS EMPRESAS DE HOTELERÍA Y TURISMO DE LA SALUD, CON UNA GRAN EXPERIENCIA EN EL TRATAMIENTO DE LA SALUD EN LAS TERAPIAS ALTERNATIVAS, COMPLEMENTARIAS, ENERGÉTICAS Y TRADICIONALES.',		
+    'Contenido_habitacionsimple'=>'El hotel Abancay, ofrece varios tipos de habitaciones y una de ellas son las habitaciones simples para que nuestros clientes se sientan como en su casa.',		
+    'Contenido_habitaciondoble'=>'El hotel Abancay, ofrece varios tipos de habitaciones y una de ellas son las habitaciones dobles para que nuestros clientes se sientan como en su casa.',	
+    'Contenido_habitacionmatrimonial'=>'El hotel Abancay, ofrece varios tipos de habitaciones y una de ellas son las habitaciones matrimoniales para que nuestros clientes se sientan como en su casa.'	
+);
