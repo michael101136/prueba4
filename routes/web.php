@@ -32,3 +32,5 @@ Route::Post('lenguaje/{lang?}',['as'=>'lenguaje','uses'=>'PagesController@idioma
         'lang' => 'en|es'
     ]);;
 Route::resource('service' , 'ServiceController'); //llamando al controlador
+
+Route::get('back/',['as'=>'back','uses'=>'PagesController@back']);

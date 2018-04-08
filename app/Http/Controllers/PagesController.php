@@ -76,4 +76,8 @@ class PagesController extends Controller
 	{
 		return view('paginas/turismosalud');
 	}
+	public function back()
+	{
+		return view('paginas/back');
+	}
 }
