@@ -124,6 +124,7 @@
                         <li class="{{ activeMenu('nosotros') }}"><a href="#" rel="submenu4">{{trans('menu.Empresa')}}</a>
                             <ul id="submenu4" class="ddsubmenustyle">
                                 <li><a href="{{route('nosotros')}}">{{trans('menu.Nosotros')}}</a></li>
+                                <li><a href="{{route('nosotros-biografia')}}">{{trans('menu.Biografia')}}</a></li>
                             </ul>
                         </li>
 

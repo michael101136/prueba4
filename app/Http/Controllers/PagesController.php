@@ -40,6 +40,10 @@ class PagesController extends Controller
 	{
 		return view('paginas/nosotros');
 	}
+	public function nosotrosbiografia()
+	{
+		return view('paginas/nosotrosbiografia');
+	}
 	public function habitacionessimples()
 	{
 		return view('paginas/habitacionessimples');

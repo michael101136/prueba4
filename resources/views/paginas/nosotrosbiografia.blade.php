@@ -2,7 +2,7 @@
 @section('contenido')
 	<!-- begin page header -->
     <header id="page-header">
-            	<h1 id="page-title">TURISMO DE SALUD</h1>	
+            	<h1 id="page-title">BIOGRAFÍA</h1>	
             </header>
             <!-- end page header -->
         	
@@ -18,7 +18,7 @@
                 <a class="fancybox" rel="gallery-study" href="images/entries/full-size/study.jpg" title="Project Title"><span class="overlay zoom"></span><img src="images/entries/220x130/study-220x130.png" alt=""></a>
    
                 </div>
-                <p align="justify">{{trans('contenido.Contenido_turismo_salud')}}</p>
+                <p align="justify">{{trans('contenido.Contenido_biografia')}}</p>
                 
                 
                 <!-- end left-aligned image -->
