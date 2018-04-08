@@ -13,8 +13,7 @@ class ServiceController extends Controller
      */
     public function index()
     {
-        $service=Service::all();
-        dd($service->toArray()); 
+        return view('paginas/back');
     }
 
     /**
