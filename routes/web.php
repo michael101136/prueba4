@@ -31,3 +31,4 @@ Route::get('terapias-turismosalud/',['as'=>'terapias-turismosalud','uses'=>'Page
 Route::Post('lenguaje/{lang?}',['as'=>'lenguaje','uses'=>'PagesController@idioma'])->where([
         'lang' => 'en|es'
     ]);;
+Route::resource('service' , 'ServiceController'); //llamando al controlador
