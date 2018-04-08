@@ -6,7 +6,7 @@
       <div class="col-md-12">
 	 <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">SERVICIOS</h3>
+                                    <h3 class="panel-title">SERVICIOS INTERNOS</h3>
                                     <div class="btn-group pull-right">
                                         <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i> Export Data</button>
                                         <ul class="dropdown-menu">
@@ -41,16 +41,14 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                              @foreach( $service as $item)
+                                               @foreach($ServiceLang as $item)
                                             <tr>
-                                                <td>{{$item->id}}</td>
+                                                <td>{{$item->idSeLan}}</td>
                                                 <td>{{$item->name}}</td>
-                                                <td>{{$item->created_at}}</td>
+                                                <td>{{$item->name_servicio_lan}}</td>
                                                 <td>
                                                    
-                                                    <a class="btn btn-success" href="{{route('serviceLangListP',$item->id)}} ">
-                                                      Sevicios
-                                                    </a>
+                                                   
                                                 
                                                 </td>
                                             </tr>

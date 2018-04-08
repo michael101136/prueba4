@@ -39,7 +39,7 @@
                     <li class="xn-openable">
                         <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">SERVICIOS</span></a>
                         <ul>
-                            <li><a href="pages-gallery.html"><span class="fa fa-image"></span> Gallery</a></li>
+                            <li><a href="{{ Route('service.index')}}"><span class="fa fa-image"></span> Servicios</a></li>
                             
                     
                             <li><a href="pages-messages.html"><span class="fa fa-comments"></span> Messages</a></li>

@@ -33,4 +33,8 @@ Route::Post('lenguaje/{lang?}',['as'=>'lenguaje','uses'=>'PagesController@idioma
     ]);;
 Route::resource('service' , 'ServiceController'); //llamando al controlador
 
+Route::resource('serviceLang' , 'ServiceLangController'); //llamando al controlador
+Route::get('serviceLangListP/{id}' , ['as'=>'serviceLangListP','uses'=>'ServicelangListP@listar']); //llamando al controlador
+
+
 Route::get('back/',['as'=>'back','uses'=>'PagesController@back']);
