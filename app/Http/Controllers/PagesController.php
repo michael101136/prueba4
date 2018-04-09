@@ -72,7 +72,28 @@ class PagesController extends Controller
 	}
 	public function habitacionesdobles()
 	{
-		return view('paginas/habitacionesdobles');
+		$lang=session('lang');
+	   if($lang=='es')
+	    {
+			$servicios = DB::table('services')
+            ->join('serviceslangs', 'services.id', '=', 'serviceslangs.service_id')
+            ->join('langs', 'langs.id', '=', 'serviceslangs.lang_id')
+            ->select('serviceslangs.id as idSeLan','services.name as name_servicio','serviceslangs.name as name_servicio_lan','langs.name')
+			->where('langs.name',$lang)
+			->where('services.id','2')->get();
+			//dd($servicios);		
+			return view('paginas/habitacionesdobles',['servicios' =>$servicios]);
+		}else
+		{
+			$servicios = DB::table('services')
+            ->join('serviceslangs', 'services.id', '=', 'serviceslangs.service_id')
+            ->join('langs', 'langs.id', '=', 'serviceslangs.lang_id')
+            ->select('serviceslangs.id as idSeLan','services.name as name_servicio','serviceslangs.name as name_servicio_lan','langs.name')
+			->where('langs.name',$lang)
+			->where('services.id','2')->get();
+			//dd($servicios);
+			return view('paginas/habitacionesdobles',['servicios' =>$servicios]);
+		}
 	}
 	public function habitacionesmatrimoniales()
 	{
