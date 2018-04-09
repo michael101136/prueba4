@@ -14,7 +14,7 @@ class PagesController extends Controller
 
 	public function inicio()
 	{
-		
+		   session(['lang' =>'es']);
 		   return view('paginas/inicio');
 	}
 	public function idioma(Request $request)
