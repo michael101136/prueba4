@@ -221,73 +221,9 @@
             </section>
             <!-- end selected projects -->
 
-            <!-- begin newsletter -->
-            <section class="one-half">
-                <h2>Newsletter Subscription</h2>
-                <div id="newsletter-wrap">
-                    <p>Subscribe to our email newsletter for useful tips and valuable resources sent out every second Monday.</p>
-                    <div class="notification-box notification-box-success" style="display: none;">
-                        <p>You have successfully subscribed to our newsletter.</p>
-                        <a href="#" class="notification-close notification-close-success">x</a>
-                    </div>
+            
 
-                    <div class="notification-box notification-box-error" style="display: none;">
-                        <p>Your email address couldn't be subscribed because a server error occurred. Please try again later.</p>
-                        <a href="#" class="notification-close notification-close-error">x</a>
-                    </div>
-                    <form id="newsletter-form" class="content-form clearfix" action="#" method="post">
-                        <input id="subscribe" class="button" type="submit" name="subscribe" value="Subscribe">
-                        <input id="newsletter" type="email" name="newsletter" placeholder="Enter your email address here &hellip;" class="required">
-                    </form>
-                    <p class="tip"><span class="note">&#42;</span> Check your spam folder if the mail does not arrive.</p>
-                </div>
-            </section>
-            <!-- end newsletter -->
-            
-            <!-- begin testimonials -->
-            <section class="one-half column-last">
-                <h2>Testimonials <span class="more">&ndash; <a href="testimonials.html">View All Testimonials &raquo;</a></span></h2> 
-                
-                <!-- begin testimonial carousel -->
-                <ul class="testimonial-carousel">
-                    <li>
-                        <blockquote class="speech-bubble">
-                            <div class="quote-content">
-                                <p>Great theme! Very intuitive, clean code, very well-organized documentation &ndash; I would highly recommend getting this theme; it’s ideal for further customization!</p>
-                                <span class="quote-arrow"></span>
-                            </div>
-                            <div class="quote-meta">Harry Jones, Web Designer<br>
-                                <span class="grey-text">CreativeBrains</span>
-                            </div>
-                        </blockquote>
-                    </li>
-                    <li>
-                        <blockquote class="speech-bubble">
-                            <div class="quote-content">
-                                <p>I would rate the template 5 out of 5 and here's why: it has a clean and straightforward look that will work for a variety of target audiences, which is important when you build for ROI.</p>
-                                <span class="quote-arrow"></span>
-                            </div>
-                            <div class="quote-meta">Andrew Williams, Art Director<br>
-                                <span class="grey-text">SmartBiz</span>
-                            </div>
-                        </blockquote>
-                    </li>
-                    <li>
-                        <   blockquote class="speech-bubble">
-                            <div class="quote-content">
-                                <p>The template is really intuitive to customize and, the few instances where I needed help, you were right there to assist, in a timely manner, I might add. Well done, keep up the great work!</p>
-                                <span class="quote-arrow"></span>
-                            </div>
-                            <div class="quote-meta">Larry Thompson, Web Developer<br>
-                                <span class="grey-text">BitVenture</span>
-                            </div>
-                        </blockquote>
-                    </li>
-                </ul>
-                <!-- end testimonial carousel -->
-            </section>
-            <!-- end testimonials -->
-            
+           
             <div class="clear"></div>
     @endsection
     

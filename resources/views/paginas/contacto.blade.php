@@ -8,12 +8,12 @@
             
             <!-- begin main content -->
             
-            <!-- begin google map --> 
+                <!-- begin google map --> 
             <section>
-                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.400045220848!2d-72.87870548561642!3d-13.63341239042405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916d02dfecf2a9fb%3A0xbbbd466ce1e29b80!2sHOTEL+ABANCAY!5e0!3m2!1ses!2spe!4v1523234947544" width="1200" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </section>
             <!-- end google map -->
-            
+            <br/>
             <!-- begin main -->
             <section id="main" class="three-fourths">
             <!-- begin contact form -->
@@ -74,6 +74,7 @@
                   
                     </p>
                 </div>
+            
             </aside>
             <!-- end sidebar -->
             

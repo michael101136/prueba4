@@ -32,13 +32,11 @@
                         <br>
                         <h3>Servicios</h3><br>
                         <ul class="check">
-                            <li>Internet - Wifi</li>
-                            <li>Cable</li>
-                            <li>Servicio de desayuno cortesía del hotel</li>
-                            <li>Agua caliente las 24 horas del día</li>
-                            <li>Baño privado</li>
-                            <li>Cochera gratis</li>
+                        @foreach($servicios as $itemp)
+                            <li>{{$itemp->name_servicio_lan}}</li>
+                            @endforeach
                         </ul>
+                       
                         <h3>Precio</h3><br>
                         <li>S/. 40</li>
                         </div>
