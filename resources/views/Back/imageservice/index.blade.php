@@ -13,8 +13,8 @@
                                         <thead>
                                             <tr>
                                                 <th>N°</th>
-                                                <th>Nombre</th>
-                                                <th>Fecha Creación</th>
+                                                <th>Image</th>
+                                                <th>Description</th>
                                                 <th style="float: center;">Acción</th>
                                             </tr>
                                         </thead>

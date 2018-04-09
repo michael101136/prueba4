@@ -38,4 +38,7 @@ Route::resource('serviceLang' , 'ServiceLangController'); //llamando al controla
 Route::get('serviceLangListP/{id}' , ['as'=>'serviceLangListP','uses'=>'ServicelangListP@listar']); //llamando al controlador
 
 
+Route::get('imageservice/{id}' , ['as'=>'imageservice-p','uses'=>'imageserviceListP@listar']); 
+
+
 Route::get('back/',['as'=>'back','uses'=>'PagesController@back']);
