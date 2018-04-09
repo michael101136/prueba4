@@ -47,7 +47,7 @@ class PagesController extends Controller
 	public function habitacionessimples()
 	{
 		$lang=session('lang');
-	   if($lang=='es')
+	   	if($lang=='es')
 	    {
 			$servicios = DB::table('services')
             ->join('serviceslangs', 'services.id', '=', 'serviceslangs.service_id')
@@ -97,7 +97,30 @@ class PagesController extends Controller
 	}
 	public function habitacionesmatrimoniales()
 	{
-		return view('paginas/habitacionesmatrimoniales');
+		$lang=session('lang');
+	   	if($lang=='es')
+	    {
+			$servicios = DB::table('services')
+            ->join('serviceslangs', 'services.id', '=', 'serviceslangs.service_id')
+            ->join('langs', 'langs.id', '=', 'serviceslangs.lang_id')
+            ->select('serviceslangs.id as idSeLan','services.name as name_servicio','serviceslangs.name as name_servicio_lan','langs.name')
+			->where('langs.name',$lang)
+			->where('services.id','3')->get();
+			//dd($servicios);		
+			return view('paginas/habitacionesmatrimoniales',['servicios' =>$servicios]);			
+		}
+		if($lang=='en') 
+		{
+			$servicios = DB::table('services')
+            ->join('serviceslangs', 'services.id', '=', 'serviceslangs.service_id')
+            ->join('langs', 'langs.id', '=', 'serviceslangs.lang_id')
+            ->select('serviceslangs.id as idSeLan','services.name as name_servicio','serviceslangs.name as name_servicio_lan','langs.name')
+			->where('langs.name',$lang)
+			->where('services.id','3')->get();
+			//dd($servicios);
+			return view('paginas/habitacionesmatrimoniales',['servicios' =>$servicios]);
+		}
+		
 	}
 	public function terapiasalternativas()
 	{
