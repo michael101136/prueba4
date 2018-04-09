@@ -16,6 +16,8 @@ class CreateImageservicesTable extends Migration
         Schema::create('imageservices', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('url');
+            $table->string('description');
             $table->integer('service_id')->unsigned();
             $table->integer('lang_id')->unsigned();
             $table->timestamps();
