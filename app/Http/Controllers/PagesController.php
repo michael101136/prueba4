@@ -14,12 +14,19 @@ class PagesController extends Controller
 
 	public function inicio()
 	{
-		   session(['lang' =>'es']);
+		  		
+		if (session()->exists('lang')) {
+		    
+		}
+		else
+		{
+			session(['lang' =>'es']);
+		}
+		  
 		   return view('paginas/inicio');
 	}
 	public function idioma(Request $request)
 	{
-		
 
 		session(['lang' => $request->idiomaMultiple]);
    
