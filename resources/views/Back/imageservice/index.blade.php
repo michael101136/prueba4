@@ -1,10 +1,10 @@
 
 @extends('layoutBack')
 @section('contenido')
-	 <!-- START DATATABLE EXPORT -->
-	 <div class="row">
+     <!-- START DATATABLE EXPORT -->
+     <div class="row">
       <div class="col-md-12">
-	 <div class="panel panel-default">
+     <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h3 class="panel-title">SERVICIOS</h3>                                   
                                 </div>
@@ -13,38 +13,27 @@
                                         <thead>
                                             <tr>
                                                 <th>N°</th>
-                                                <th>Image</th>
-                                                <th>Description</th>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Descripción</th>
+                                                <th>Lang</th>
                                                 <th style="float: center;">Acción</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                              @foreach( $service as $item)
+                                              @foreach($servicesImage  as $item)
                                             <tr>
-                                                <td>{{$item->id}}</td>
-                                                <td>{{$item->name}}</td>
-                                                <td>{{$item->created_at}}</td>
+                                                <td>{{$item->idImages}}</td>
+                                                <td>{{$item->url}}</td>
+                                                <td>{{$item->name_servicio}}</td>
+                                                <td>{{$item->description}}</td>
                                                 <td>
-                                                 <div class="btn-group">
-                                                <a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Sub Servicios 
-                                                    <span class="caret">
-                                                    </span>
-                                                </a>
-                                                    <ul class="dropdown-menu" role="menu">
-                                                        <li>
-                                                            <a href="{{route('serviceLangListP',$item->id)}} ">
-                                                            Sevicios
-                                                             </a>
-                                                        </li>
-                                                        <li>
-                                                           <a href="{{route('imageservice-p',$item->id)}} ">
-                                                             Imagenes
-                                                             </a>
-                                                        </li>
-                                                                                                              
-                                                    </ul>
-                                                </div>
+                                                    {{$item->langName}}
                                                 </td>
+                                                 <td>
+                                                    
+                                                </td>
+                                                 
                                             </tr>
                                             @endforeach
                                         </tbody>
@@ -52,6 +41,6 @@
                                     
                                     </div>
                                 </div>
-							</div>
+                            </div>
                             </div>
 @endsection

@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="images/favicon.ico" type="image/x-icon" />    
         <link rel="stylesheet" type="text/css" id="theme" href="{{ asset('/css/back/theme-blue.css')}}">
+
     
     <title>HOTEL ABANCAY</title>
 </head>
@@ -186,7 +187,7 @@
      
                     
                 </div>
-                <!-- END PAGE CONTENT WRAPPER -->                                
+                                        
             </div>            
             </div> 
 
@@ -211,7 +212,8 @@
         <script type="text/javascript" src="{{ asset('/js/back/settings.js')}}"></script>
         
         <script type="text/javascript" src="{{ asset('/js/back/plugins.js')}}"></script>        
-        <script type="text/javascript" src="{{ asset('/js/back/actions.js')}}"></script>        
+        <script type="text/javascript" src="{{ asset('/js/back/actions.js')}}"></script>   
+
         <!-- END TEMPLATE -->
     <!-- END SCRIPTS --> 
 
