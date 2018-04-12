@@ -6,10 +6,9 @@
       <div class="col-md-12">
 	 <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">SERVICIOS</h3>
-                                   
-                                                                   
-                                    
+
+                                    <h3 class="panel-title">SERVICIOS</h3>                                
+
                                 </div>
                                 <div class="panel-body">
                                     <table id="customers2" class="table datatable">
@@ -28,11 +27,25 @@
                                                 <td>{{$item->name}}</td>
                                                 <td>{{$item->created_at}}</td>
                                                 <td>
-                                                   
-                                                    <a class="btn btn-success" href="{{route('serviceLangListP',$item->id)}} ">
-                                                      Sevicios
-                                                    </a>
-                                                
+                                                 <div class="btn-group">
+                                                <a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Sub Servicios 
+                                                    <span class="caret">
+                                                    </span>
+                                                </a>
+                                                    <ul class="dropdown-menu" role="menu">
+                                                        <li>
+                                                            <a href="{{route('serviceLangListP',$item->id)}} ">
+                                                            Sevicios
+                                                             </a>
+                                                        </li>
+                                                        <li>
+                                                           <a href="{{route('imageservice-p',$item->id)}} ">
+                                                             Imagenes
+                                                             </a>
+                                                        </li>
+                                                                                                              
+                                                    </ul>
+                                                </div>
                                                 </td>
                                             </tr>
                                             @endforeach

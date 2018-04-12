@@ -39,6 +39,9 @@ Route::get('serviceLangListP/{id}' , ['as'=>'serviceLangListP','uses'=>'Servicel
 Route::get('serviceLangListcreate/{idservice}' , ['as'=>'serviceLangListcreate','uses'=>'ServicelangListP@create']);
 Route::post('serviceLangListStore' , ['as'=>'serviceLangListStore','uses'=>'ServicelangListP@store']);
 
+Route::get('imageservice/{id}' , ['as'=>'imageservice-p','uses'=>'imageserviceListP@listar']); 
+
+
 Route::get('back/',['as'=>'back','uses'=>'PagesController@back']);
 
 Route::resource('user' , 'UserController');
