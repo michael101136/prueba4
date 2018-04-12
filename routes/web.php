@@ -36,6 +36,9 @@ Route::resource('service' , 'ServiceController'); //llamando al controlador
 
 Route::resource('serviceLang' , 'ServiceLangController'); //llamando al controlador
 Route::get('serviceLangListP/{id}' , ['as'=>'serviceLangListP','uses'=>'ServicelangListP@listar']); //llamando al controlador
-
+Route::get('serviceLangListcreate/{idservice}' , ['as'=>'serviceLangListcreate','uses'=>'ServicelangListP@create']);
+Route::post('serviceLangListStore' , ['as'=>'serviceLangListStore','uses'=>'ServicelangListP@store']);
 
 Route::get('back/',['as'=>'back','uses'=>'PagesController@back']);
+
+Route::resource('user' , 'UserController');

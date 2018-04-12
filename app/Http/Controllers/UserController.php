@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 use DB;
 use Illuminate\Http\Request;
-use App\Service;
-class ServiceController extends Controller
+use App\User;
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,9 +13,9 @@ class ServiceController extends Controller
      */
     public function index()
     {
-        $service=Service::all();
-
-        return view('Back.service.index',['service' =>  $service]);
+        $user=User::all();
+       // dd($user);
+       return view('Back.user.index',['user' =>  $user]);
     }
 
     /**
@@ -36,8 +36,7 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
-        
-        return $request->all();
+        //
     }
 
     /**

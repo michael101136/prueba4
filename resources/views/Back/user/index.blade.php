@@ -6,12 +6,9 @@
       <div class="col-md-12">
 	 <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">SERVICIOS INTERNOS</h3>
-                                    <div class="btn-group pull-right">
-                                    <a class="btn btn-success" href="{{route('serviceLangListcreate',$idservice)}}">
-                                            Agregar
-                                        </a>   
-                                    </div>                                    
+                                    <h3 class="panel-title">USUARIOS</h3>
+                                   
+                                                                   
                                     
                                 </div>
                                 <div class="panel-body">
@@ -19,18 +16,23 @@
                                         <thead>
                                             <tr>
                                                 <th>N°</th>
-                                                <th>Idioma</th>
-                                                <th>Nombre servicios</th>
+                                                <th>Nombre</th>
+                                                <th>Correo</th>
                                                 <th style="float: center;">Acción</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                               @foreach($ServiceLang as $item)
+                                              @foreach( $user as $item)
                                             <tr>
-                                                <td>{{$item->idSeLan}}</td>
+                                                <td>{{$item->id}}</td>
                                                 <td>{{$item->name}}</td>
-                                                <td>{{$item->name_servicio_lan}}</td>
-                                                <td>          
+                                                <td>{{$item->email}}</td>
+                                                <td>
+                                                   
+                                                    <a class="btn btn-success" href="">
+                                                      editar
+                                                    </a>
+                                                
                                                 </td>
                                             </tr>
                                             @endforeach

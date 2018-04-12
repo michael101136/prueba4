@@ -46,7 +46,7 @@
     
                     <li class="xn-title">USUARIOS</li>                
                     <li>
-                        <a href="maps.html"><span class="fa fa-map-marker"></span> <span class="xn-text">Maps</span></a>
+                        <a href="{{ Route('user.index')}}"><span class="fa fa-map-marker"></span> <span class="xn-text">Maps</span></a>
                     </li>                    
                    
                     
