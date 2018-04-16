@@ -41,7 +41,10 @@ class PagesController extends Controller
 	public function contacto()
 	{
 	
-		   return view('paginas/contacto');
+		   $paises=DB::table('paises')->get();
+		   
+		   return view('paginas/contacto',['paises' =>$paises]);
+
 	}
 	public function nosotros()
 	{
