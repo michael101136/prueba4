@@ -56,11 +56,13 @@ Route::get('serviceLangListcreate/{idservice}' , ['as'=>'serviceLangListcreate',
 Route::post('serviceLangListStore' , ['as'=>'serviceLangListStore','uses'=>'ServicelangListP@store']);
 
 Route::get('imageservice/{id}' , ['as'=>'imageservice-p','uses'=>'imageserviceListP@listar']); 
-
+Route::get('imageserviceCreate/{idservice}' , ['as'=>'imageserviceCreate','uses'=>'imageserviceListP@create']);
+Route::post('imageserviceStore' , ['as'=>'imageserviceStore','uses'=>'imageserviceListP@store']);
 
 Route::get('back/',['as'=>'back','uses'=>'PagesController@back']);
 
 Route::resource('user' , 'UserController');
+
 
 Route::get('login','Auth\LoginController@showLoginForm');
 Route::post('login','Auth\LoginController@login');
@@ -74,3 +76,4 @@ Route::get('/home', function () {
         return view('layoutLogin');
     }
 });
+

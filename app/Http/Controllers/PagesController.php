@@ -62,8 +62,15 @@ class PagesController extends Controller
             ->select('serviceslangs.id as idSeLan','services.name as name_servicio','serviceslangs.name as name_servicio_lan','langs.name')
 			->where('langs.name',$lang)
 			->where('services.id','1')->get();
-			//dd($servicios);		
-			return view('paginas/habitacionessimples',['servicios' =>$servicios]);
+
+			$imagenes = DB::table('services')
+            ->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+            ->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+            ->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->where('services.id','1')->get();
+			//dd($imagenes);		
+			return view('paginas/habitacionessimples',['servicios' =>$servicios,'imagenes'=> $imagenes]);
 		}else
 		{
 			$servicios = DB::table('services')
@@ -72,8 +79,16 @@ class PagesController extends Controller
             ->select('serviceslangs.id as idSeLan','services.name as name_servicio','serviceslangs.name as name_servicio_lan','langs.name')
 			->where('langs.name',$lang)
 			->where('services.id','1')->get();
-			//dd($servicios);
-			return view('paginas/habitacionessimples',['servicios' =>$servicios]);
+
+			$imagenes = DB::table('services')
+            ->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+            ->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+            ->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->where('services.id','1')->get();
+			//dd($imagenes);		
+			return view('paginas/habitacionessimples',['servicios' =>$servicios,'imagenes'=> $imagenes]);
+		
 		}
 		
 	}
@@ -88,8 +103,15 @@ class PagesController extends Controller
             ->select('serviceslangs.id as idSeLan','services.name as name_servicio','serviceslangs.name as name_servicio_lan','langs.name')
 			->where('langs.name',$lang)
 			->where('services.id','2')->get();
-			//dd($servicios);		
-			return view('paginas/habitacionesdobles',['servicios' =>$servicios]);
+				
+			$imagenes = DB::table('services')
+            ->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+            ->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+            ->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->where('services.id','2')->get();	
+			
+			return view('paginas/habitacionesdobles',['servicios' =>$servicios,'imagenes'=> $imagenes]);
 		}else
 		{
 			$servicios = DB::table('services')
@@ -98,8 +120,15 @@ class PagesController extends Controller
             ->select('serviceslangs.id as idSeLan','services.name as name_servicio','serviceslangs.name as name_servicio_lan','langs.name')
 			->where('langs.name',$lang)
 			->where('services.id','2')->get();
-			//dd($servicios);
-			return view('paginas/habitacionesdobles',['servicios' =>$servicios]);
+			
+			$imagenes = DB::table('services')
+            ->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+            ->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+            ->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->where('services.id','2')->get();
+
+			return view('paginas/habitacionesdobles',['servicios' =>$servicios,'imagenes'=> $imagenes]);
 		}
 	}
 	public function habitacionesmatrimoniales()
@@ -113,8 +142,15 @@ class PagesController extends Controller
             ->select('serviceslangs.id as idSeLan','services.name as name_servicio','serviceslangs.name as name_servicio_lan','langs.name')
 			->where('langs.name',$lang)
 			->where('services.id','3')->get();
-			//dd($servicios);		
-			return view('paginas/habitacionesmatrimoniales',['servicios' =>$servicios]);			
+			
+			$imagenes = DB::table('services')
+            ->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+            ->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+            ->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->where('services.id','3')->get();
+			
+			return view('paginas/habitacionesmatrimoniales',['servicios' =>$servicios,'imagenes'=> $imagenes]);			
 		}
 		if($lang=='en') 
 		{
@@ -124,8 +160,15 @@ class PagesController extends Controller
             ->select('serviceslangs.id as idSeLan','services.name as name_servicio','serviceslangs.name as name_servicio_lan','langs.name')
 			->where('langs.name',$lang)
 			->where('services.id','3')->get();
-			//dd($servicios);
-			return view('paginas/habitacionesmatrimoniales',['servicios' =>$servicios]);
+			
+			$imagenes = DB::table('services')
+            ->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+            ->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+            ->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->where('services.id','3')->get();
+
+			return view('paginas/habitacionesmatrimoniales',['servicios' =>$servicios,'imagenes'=> $imagenes]);
 		}
 		
 	}
