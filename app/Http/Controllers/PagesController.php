@@ -193,22 +193,88 @@ class PagesController extends Controller
             ->join('langs', 'langs.id', '=', 'imageservices.lang_id')
             ->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
 			->where('langs.name',$lang)
-			->where('services.id','2')->get();
+			->where('services.id','4')->get();
 
 			return view('paginas/terapiasalternativas',['imagenes'=> $imagenes]);
 		}
 	}
 	public function terapiascomplementarias()
 	{
-		return view('paginas/terapiascomplementarias');
+		$lang=session('lang');
+		if($lang=='es')
+	    {
+			$imagenes = DB::table('services')
+			->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+			->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+			->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->where('services.id','5')->get();
+		
+			return view('paginas/terapiascomplementarias',['imagenes'=> $imagenes]);
+		}
+		else
+		{	
+			$imagenes = DB::table('services')
+            ->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+            ->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+            ->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->where('services.id','5')->get();
+
+			return view('paginas/terapiascomplementarias',['imagenes'=> $imagenes]);
+		}
 	}
 	public function terapiastradicionales()
 	{
-		return view('paginas/terapiastradicionales');
+		$lang=session('lang');
+	   	if($lang=='es')
+	    {
+			$imagenes = DB::table('services')
+			->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+			->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+			->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->where('services.id','6')->get();
+		
+			return view('paginas/terapiastradicionales',['imagenes'=> $imagenes]);
+		}
+		else
+		{	
+			$imagenes = DB::table('services')
+            ->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+            ->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+            ->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->where('services.id','6')->get();
+
+			return view('paginas/terapiastradicionales',['imagenes'=> $imagenes]);
+		}
 	}
 	public function terapiasenergeticas()
 	{
-		return view('paginas/terapiasenergeticas');
+		$lang=session('lang');
+	   	if($lang=='es')
+	    {
+			$imagenes = DB::table('services')
+			->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+			->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+			->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->where('services.id','6')->get();
+		
+			return view('paginas/terapiasenergeticas',['imagenes'=> $imagenes]);
+		}
+		else
+		{	
+			$imagenes = DB::table('services')
+            ->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+            ->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+            ->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->where('services.id','6')->get();
+
+			return view('paginas/terapiasenergeticas',['imagenes'=> $imagenes]);
+		}
 	}
 	public function tarifaspaquetes()
 	{
