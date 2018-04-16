@@ -14,9 +14,9 @@
                 <div class="three-fourths">
                 	<div class="entry-slider">
                         <ul>
-                            <li><a class="fancybox" rel="gallery-living-brown" href="images/entries/full-size/living-brown.jpg" title="Image Title"><span class="overlay zoom"></span><img src="images/entries/700x500/doble1.jpg" alt=""></a></li>
-                            <li style="display: none;"><a class="fancybox" rel="gallery-living-brown" href="images/entries/full-size/dining-and-living-cream.jpg" title="Image Title"><span class="overlay zoom"></span><img src="images/entries/700x500/dining-and-living-cream-700x500.png" alt=""></a></li>
-                            <li style="display: none;"><a class="fancybox" rel="gallery-living-brown" href="images/entries/full-size/living-white.jpg" title="Image Title"><span class="overlay zoom"></span><img src="images/entries/700x500/living-white-700x500.png" alt=""></a></li>
+                        @foreach($imagenes as $itemp)
+                            <li><a class="fancybox" rel="gallery-living-brown" href="{{URL::asset('/images/servicios/'.$itemp->imageurl)}}" title="Image Title"><span class="overlay zoom"></span><img src="{{URL::asset('/images/servicios/'.$itemp->imageurl)}}" width="700px" height="500px" alt="Klorofil Logo" class="img-responsive logo"  alt=""></a></li>
+                        @endforeach    
                         </ul>
                     </div>
                 </div>
