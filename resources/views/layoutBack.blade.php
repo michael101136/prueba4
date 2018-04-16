@@ -40,7 +40,7 @@
                             <li><a href="{{ Route('service.index')}}"><span class="fa fa-image"></span> Servicios</a></li>
                             
                     
-                            <li><a href="pages-messages.html"><span class="fa fa-comments"></span> Messages</a></li>
+                            <li><a href=""><span class="fa fa-comments"></span> Entradas</a></li>
                            
                         </ul>
                     </li>
