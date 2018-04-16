@@ -26,7 +26,7 @@
                 <!-- START X-NAVIGATION -->
                 <ul class="x-navigation">
                     <li class="xn-logo">
-                        <a href="index.html">Joli Admin</a>
+                        <a href="">{{auth()->user()->name }}</a>
                         <a href="#" class="x-navigation-control"></a>
                     </li>
                    
@@ -74,8 +74,11 @@
                     </li>   
                     <!-- END SEARCH -->
                     <!-- SIGN OUT -->
-                    <li class="xn-icon-button pull-right">
-                        <a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span></a>                        
+                     <li class="xn-icon-button pull-right">
+                        <a href="{{route('logout')}}" >
+                            <span class="fa fa-sign-out"></span>
+                        </a>        
+
                     </li> 
                     <!-- END SIGN OUT -->
                     <!-- MESSAGES -->

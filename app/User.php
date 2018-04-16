@@ -4,7 +4,8 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-
+use App\Role;
+use App\Mensaje;
 class User extends Authenticatable
 {
     use Notifiable;
@@ -26,4 +27,38 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    
+    public  function roles()
+    {
+
+        return $this->belongsToMany(Role::class,'assigned_roles','user_id', 'roles_id')->withPivot('id');//estamos definiendo  el usuario con el roles
+    }
+
+    public function hasRoles(array $roles)
+    {
+       foreach ($roles as $role) 
+        {
+            foreach ($this->roles as $userRole) 
+            {
+                if ($userRole->name === $role) //si es igual al que pasamos por usuario dejara pasar y mostrara lo que usuario descea 
+                {
+
+                    return true;
+
+                }       
+             }         
+
+        }
+       return false;
+    }
+    public function mensajes()
+    {
+        return $this->hasMany(Mensaje::class);
+    }
+
+     public  function usuarios()
+    {
+
+        return $this->belongsToMany(User::class,'categoria_users','user_id','categoria_id')->withPivot('titulo','ruta','contenido');
+    }
 }

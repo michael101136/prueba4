@@ -1,5 +1,21 @@
 <?php
 
+Route::get('test' , function(){
+
+	$user = new App\User;
+	
+	$user->name ='admin';
+
+	$user->email = 'hotel@gmail.com';
+
+	$user->password = bcrypt('123');
+
+	$user->save();
+
+	return $user;
+
+});
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -47,4 +63,17 @@ Route::get('back/',['as'=>'back','uses'=>'PagesController@back']);
 
 Route::resource('user' , 'UserController');
 
-Route::resource('entry' , 'EntryController');
+
+Route::get('login','Auth\LoginController@showLoginForm');
+Route::post('login','Auth\LoginController@login');
+Route::get('logout',['as' =>'logout','uses' => 'Auth\LoginController@logout']);
+//Route::get('login', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
+
+Route::get('/home', function () {
+    if(Auth::check()) {
+        return redirect('/service');
+    } else {
+        return view('layoutLogin');
+    }
+});
+
