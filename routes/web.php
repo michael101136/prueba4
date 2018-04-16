@@ -59,6 +59,8 @@ Route::get('imageservice/{id}' , ['as'=>'imageservice-p','uses'=>'imageserviceLi
 Route::get('imageserviceCreate/{idservice}' , ['as'=>'imageserviceCreate','uses'=>'imageserviceListP@create']);
 Route::post('imageserviceStore' , ['as'=>'imageserviceStore','uses'=>'imageserviceListP@store']);
 
+Route::resource('mensaje' , 'MensajeController');
+
 Route::get('back/',['as'=>'back','uses'=>'PagesController@back']);
 
 Route::resource('user' , 'UserController');

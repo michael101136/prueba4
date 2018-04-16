@@ -35,21 +35,22 @@
                         <a href="index.html"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>                        
                     </li>                    
                     <li class="xn-openable">
-                        <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">SERVICIOS</span></a>
+                        <a href="#"><span class="fa fa-building-o"></span></span> <span class="xn-text">SERVICIOS</span></a>
                         <ul>
-                            <li><a href="{{ Route('service.index')}}"><span class="fa fa-image"></span> Servicios</a></li>
-                            
-                    
-                            <li><a href=""><span class="fa fa-comments"></span> Entradas</a></li>
-                           
+                            <li><a href="{{ Route('service.index')}}"><span class="fa fa-building-o"></span> Servicios</a></li>
                         </ul>
                     </li>
+                    <li class="xn-title">Mensajes</li>                
+                    <li>
+                        <a href="{{ Route('mensaje.index')}}"><span class="fa fa-bullhorn"></span> <span class="xn-text">Mensajes</span></a>
+                    </li>                 
+                   
     
                     <li class="xn-title">USUARIOS</li>                
                     <li>
-                        <a href="{{ Route('user.index')}}"><span class="fa fa-map-marker"></span> <span class="xn-text">Maps</span></a>
-                    </li>                    
-                   
+                        <a href="{{ Route('user.index')}}"><span class="fa fa-group"></span><span class="xn-text">Usuario</span></a>
+                    </li>     
+                    
                     
                 </ul>
                 <!-- END X-NAVIGATION -->
