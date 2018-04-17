@@ -22,8 +22,31 @@ class PagesController extends Controller
 		{
 			session(['lang' =>'es']);
 		}
-		  
-		   return view('paginas/inicio');
+		
+		$lang=session('lang');
+		if($lang=='es')
+	    {
+			$imagenes = DB::table('services')
+			->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+			->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+			->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name','imageservices.description')
+			->where('langs.name',$lang)
+			->where('services.id','8')->get();
+		
+			return view('paginas/inicio',['imagenes'=> $imagenes]);
+		}
+		else
+		{	
+			$imagenes = DB::table('services')
+            ->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+            ->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+            ->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->where('services.id','8')->get();
+
+			return view('paginas/inicio',['imagenes'=> $imagenes]);
+		}
+		  // return view('paginas/inicio');
 	}
 	public function idioma(Request $request)
 	{

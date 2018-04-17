@@ -3,43 +3,20 @@
 
             <section id="slider-home">
                 <div class="flex-container">
-                    <div class="flexslider">
+                    <div class="flexslider" height="350px">
                         <ul class="slides">
-                            <li>
-                                <img src="{{URL::asset('images/slider/slides/slider1.jpg')}}" alt="White Living Room">
+                        @foreach($imagenes as $itemp)
+                        <li>
+                                <img src="{{URL::asset('/images/servicios/'.$itemp->imageurl)}}" alt="White Living Room">
                                 <div class="flex-caption">
-                                    <h2>Responsive Layout</h2>
-                                    <p>You can describe your slides using captions. This is an example of a caption with <a href="#">a link</a>.</p>
+                                    <h2>{{$itemp->description}}</h2>
+                                 
+                                    <p>{{$itemp->description}}.</p>
                                 </div>
                             </li>
-                            <li>
-                                <img src="{{URL::asset('images/slider/slides/slider2.jpg')}}" alt="Villa">
-                                <div class="flex-caption">
-                                    <h2>HTML5 &amp; CSS3 Code</h2>
-                                    <p>You can describe your slides using captions. This is an example of a caption with <a href="#">a link</a>.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <img src="{{URL::asset('images/slider/slides/slider3.jpg')}}" alt="Building">
-                                <div class="flex-caption">
-                                    <h2>Clean Design</h2>
-                                    <p>You can describe your slides using captions. This is an example of a caption with <a href="#">a link</a>.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <img src="{{URL::asset('images/slider/slides/slider4.jpg')}}" alt="Brown Living Room">
-                                <div class="flex-caption">
-                                    <h2>Touch Enabled</h2>
-                                    <p>You can describe your slides using captions. This is an example of a caption with <a href="#">a link</a>.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <img src="{{URL::asset('images/slider/slides/slider5.jpg')}}" alt="Brown Dining Room">
-                                <div class="flex-caption">
-                                    <h2>Easy to Customize</h2>
-                                    <p>You can describe your slides using captions. This is an example of a caption with <a href="#">a link</a>.</p>
-                                </div>
-                            </li>
+                        @endforeach 
+                           
+                           
                         </ul>
                     </div>
                 </div>
