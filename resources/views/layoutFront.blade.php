@@ -57,7 +57,9 @@
     <script src="{{ asset('/js/jquery.touchSwipe.min.js')}}" type="text/javascript"></script> <!-- touchSwipe -->
     <script src="{{ asset('/js/custom.js')}}" type="text/javascript"></script> <!-- jQuery initialization -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
-
+ 
+    <script src="{{ asset('/js/jssor.slider-27.1.0.min.js')}}" type="text/javascript"></script>
+ 
     <!-- end JS -->
     
     <title>HOTEL ABANCAY</title>
