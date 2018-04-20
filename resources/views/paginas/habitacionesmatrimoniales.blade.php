@@ -59,7 +59,6 @@
 						<div class="entry-image">
 							<a class="fancybox" rel="gallery-living-large-windows" href="{{URL::asset('/images/servicios/'.$itemp->imageurl)}}" title="Project Title"><span class="overlay zoom"></span><img src="{{URL::asset('/images/servicios/'.$itemp->imageurl)}}" alt=""></a>
 						</div>
-						<h4 class="entry-title"><a href="portfolio-item-image.html">{{$itemp->name_servicio}}.</a></h4>
 						<div class="entry-content">
 							<p>{{$itemp->name_servicio}}.</p>
 						</div>
