@@ -33,7 +33,14 @@ class PagesController extends Controller
 			->where('langs.name',$lang)
 			->where('services.id','8')->get();
 		
-			return view('paginas/inicio',['imagenes'=> $imagenes]);
+			$imagenesfooter = DB::table('services')
+			->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+			->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+			->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->whereBetween('services.id',[1,7])->get();	
+			
+			return view('paginas/inicio',['imagenes'=> $imagenes,'imagenesfooter'=>$imagenesfooter]);
 		}
 		else
 		{	
@@ -44,7 +51,14 @@ class PagesController extends Controller
 			->where('langs.name',$lang)
 			->where('services.id','8')->get();
 
-			return view('paginas/inicio',['imagenes'=> $imagenes]);
+			$imagenesfooter = DB::table('services')
+			->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+			->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+			->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->whereBetween('services.id',[1,7])->get();	
+			
+			return view('paginas/inicio',['imagenes'=> $imagenes,'imagenesfooter'=>$imagenesfooter]);
 		}
 		  // return view('paginas/inicio');
 	}
