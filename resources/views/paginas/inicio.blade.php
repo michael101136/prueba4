@@ -32,45 +32,53 @@
                 <!-- begin iconbox carousel -->
                 <ul class="iconbox-carousel">
                     <li>
-                        <div class="iconbox computer">
-                            <h4><a href="services.html#responsive-layouts"><span class="iconbox-icon"></span>{{trans('menu.Habitacion_simple')}}</a></h4>
-                            <p>Layouts that scale gracefully across varying screen sizes.</p> 
+                        <div class="iconbox mouse" >  
+                        <center><a href="#"><img src="{{URL::asset('images/iconos/icono.png')}}"></a>
+                      
+                            <h4><a href="{{route('habitaciones-simples')}}">{{trans('menu.Habitacion_simple')}}</a></h4>
+                            </center>
                         </div>
                     </li>
                     <li>
                         <div class="iconbox mouse">
-                            <h4><a href="services.html#html5-css3-code"><span class="iconbox-icon"></span>{{trans('menu.Habitacion_doble')}}</a></h4>
-                            <p>Standards-compliant and cross-browser HTML/CSS code.</p>   
+                        <center><a href="#"><img src="{{URL::asset('images/iconos/dobles.png')}}"></a>
+                            <h4><a href="{{route('habitaciones-dobles')}}">{{trans('menu.Habitacion_doble')}}</a></h4>
+                        </center>   
                         </div>
                     </li>
                     <li>
                         <div class="iconbox applications">
-                            <h4><a href="services.html#clean-design"><span class="iconbox-icon"></span>{{trans('menu.Habitacion_matrimonial')}}</a></h4>
-                            <p>Professional, clutter-free and aesthetically simple design.</p>   
+                        <center><a href="#"><img src="{{URL::asset('images/iconos/icono1.png')}}"></a>
+                            <h4><a href="{{route('habitacionesmatrimoniales')}}">{{trans('menu.Habitacion_matrimonial')}}</a></h4>
+                        <center>
                         </div>
                     </li>
                     <li>
                         <div class="iconbox cog">
-                            <h4><a href="services.html#cms-driven-websites"><span class="iconbox-icon"></span>{{trans('menu.Tipo_alternativa')}}</a></h4>
-                            <p>CMS-driven websites that you can easily customize.</p>  
+                        <center><a href="#"><img src="{{URL::asset('images/iconos/terapia1.png')}}"></a>
+                            <h4><a href="{{route('terapias-alternativas')}}">{{trans('menu.Tipo_alternativa')}}</a></h4>
+                           </center>  
                         </div>
                     </li>
                     <li>
                         <div class="iconbox globe">
-                            <h4><a href="services.html#search-engine-optimization"><span class="iconbox-icon"></span>{{trans('menu.Tipo_complementaria')}}</a></h4>
-                            <p>Get the maximum exposure from search engines.</p>  
+                        <center><a href="#"><img src="{{URL::asset('images/iconos/terapia2.png')}}"></a>
+                            <h4><a href="{{route('terapias-complementarias')}}">{{trans('menu.Tipo_complementaria')}}</a></h4>
+                        </center>
                         </div>
                     </li>
                     <li>
                         <div class="iconbox write">
-                            <h4><a href="services.html#copywriting"><span class="iconbox-icon"></span>{{trans('menu.Tipo_tradicional')}}</a></h4>
-                            <p>Creative and engaging words that provoke action.</p> 
+                        <center><a href="#"><img src="{{URL::asset('images/iconos/terapia3.png')}}"></a>
+                            <h4><a href="{{route('terapias-tradicionales')}}">{{trans('menu.Tipo_tradicional')}}</a></h4>
+                          </center>
                         </div>
                     </li>
                     <li>
                         <div class="iconbox address-book">
-                            <h4><a href="services.html#customer-support"><span class="iconbox-icon"></span>{{trans('menu.Tipo_energetica')}}</a></h4>
-                            <p>Professional customer service that exceeds expectations.</p>   
+                        <center><a href="#"><img src="{{URL::asset('images/iconos/terapia4.png')}}"></a>
+                            <h4><a href="{{route('terapias-energeticas')}}">{{trans('menu.Tipo_energetica')}}</a></h4>
+                        </center>      
                         </div>
                     </li>
 
