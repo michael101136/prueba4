@@ -27,7 +27,7 @@
             
             <!-- begin services -->
             <section>
-                <h2>Our Services <span class="more">&ndash; <a href="services.html">View All Services &raquo;</a></span></h2> 
+                <h2>{{trans('menu.Nuestro_servicio')}}</h2> 
                 
                 <!-- begin iconbox carousel -->
                 <ul class="iconbox-carousel">
@@ -89,7 +89,7 @@
 
             <!-- begin selected projects -->
             <section>
-                <h2>Selected Projects <span class="more">&ndash; <a href="portfolio.html">View All Projects &raquo;</a></span></h2>
+                <h2>{{trans('menu.Galeria_imagenes')}}</h2>
 
                 <!-- begin project carousel -->
                 <ul class="project-carousel">
