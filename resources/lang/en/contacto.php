@@ -13,5 +13,5 @@ return array(
     'Telefono' => 'Phone', 
     'Correo' => 'Email', 
     'Horario' => 'Business Hours', 
-  
+    'Pais' => 'Country',
 );

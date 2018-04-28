@@ -46,7 +46,7 @@
             </section>
             <!-- end project -->
             <section>
-            	<h2>NUESTRAS TERAPIAS</h2> 
+            	<h2>{{trans('menu.Terapias')}}</h2> 
                 <!-- begin project carousel -->
                 <ul class="project-carousel">
                 @foreach($imagenesfooter as $itemp)

@@ -2,7 +2,7 @@
 @section('contenido')
 	<!-- begin page header -->
     <header id="page-header">
-            	<h1 id="page-title">NOSOTROS</h1>	
+            	<h1 id="page-title">{{trans('menu.Nosotros')}}</h1>	
             </header>
             <!-- end page header -->
         	

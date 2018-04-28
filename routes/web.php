@@ -34,16 +34,16 @@ Route::get('contacto/',['as' => 'contacto', 'uses' => 'PagesController@contacto'
 Route::get('portafolio/',['as' => 'portafolio', 'uses' => 'PagesController@portafolio']);
 Route::get('portafolio-turismo/',['as' => 'portafolio-turismo', 'uses' => 'PagesController@portafolioturismo']);
 Route::get('nosotros/',['as'=>'nosotros','uses'=>'PagesController@nosotros']);
-Route::get('nosotros-biografia/',['as'=>'nosotros-biografia','uses'=>'PagesController@nosotrosbiografia']);
 Route::get('habitaciones-simples/',['as'=>'habitaciones-simples','uses'=>'PagesController@habitacionessimples']);
 Route::get('habitaciones-dobles/',['as'=>'habitaciones-dobles','uses'=>'PagesController@habitacionesdobles']);
 Route::get('habitaciones-matrimoniales/',['as'=>'habitacionesmatrimoniales','uses'=>'PagesController@habitacionesmatrimoniales']);
+Route::get('terapias-turismosalud/',['as'=>'terapias-turismosalud','uses'=>'PagesController@turismosalud']);
+Route::get('terapias-biografia/',['as'=>'terapias-biografia','uses'=>'PagesController@nosotrosbiografia']);
 Route::get('terapias-alternativas/',['as'=>'terapias-alternativas','uses'=>'PagesController@terapiasalternativas']);
 Route::get('terapias-complementarias/',['as'=>'terapias-complementarias','uses'=>'PagesController@terapiascomplementarias']);
 Route::get('terapias-tradicionales/',['as'=>'terapias-tradicionales','uses'=>'PagesController@terapiastradicionales']);
 Route::get('terapias-energeticas/',['as'=>'terapias-energeticas','uses'=>'PagesController@terapiasenergeticas']);
 Route::get('tarifas-paquetes/',['as'=>'tarifas-paquetes','uses'=>'PagesController@tarifaspaquetes']);
-Route::get('terapias-turismosalud/',['as'=>'terapias-turismosalud','uses'=>'PagesController@turismosalud']);
 
 
 Route::Post('lenguaje/{lang?}',['as'=>'lenguaje','uses'=>'PagesController@idioma'])->where([

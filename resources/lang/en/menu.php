@@ -25,5 +25,7 @@ return array(
 	'Contacto' => 'Contact',
 	'Contenido_turismo_salud'=>'HEALTH TOURISM, IS THAT PEOPLE WHO FEEL SOME DOLENCE AND WANT TO RESTRICT YOUR HEALTH THROUGH ALTERNATIVE, COMPLEMENTARY, TRADITIONAL OR ENERGY THERAPIES CAN BE TREATED WITH ANY OF THESE. WE ALSO REALIZE THERAPY WITH LASER MEDICAL.',	
 	'Nuestro_servicio' => 'Our services',
-	'Galeria_imagenes' => 'Gallery'	
+	'Galeria_imagenes' => 'Gallery',
+	'Habitaciones'=>'OUR ROOMS',
+	'Terapias'=>'OUR THERAPIES'	
 );
