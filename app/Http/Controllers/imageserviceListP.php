@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use DB;
 use Illuminate\Http\Request;
 use App\Imagen;
+use Illuminate\Support\Facades\Storage;
 
 class imageserviceListP extends Controller
 {
@@ -52,5 +53,38 @@ class imageserviceListP extends Controller
         }
         
         return redirect()->route('imageservice-p',['id' => $request->id]);      
+    }
+
+     public function show($id)
+    {
+
+        $detalleImagen =DB::table('imageservices')->where('id' , $id)->first();
+        //dd($detalleImagen);
+        return view('Back.imageService.show', ['detalleImagen' => $detalleImagen]);
+    }
+    public function save(Request $request)
+    {
+        if($request->hasFile('imagen'))
+        {
+             $url='images/servicios/'.$request->url;
+             unlink($url);//eliminar una imagen de un directorio
+
+            $file= $request->imagen;
+            $extesion=$request->id.'.'.$file->getClientOriginalExtension();
+            
+            DB::table('imageservices')->where('id',$request->id)
+                                      ->update(['description' => $request->description,'url' =>$extesion]);
+
+            $destino=public_path().'/images/servicios/';
+            $subir =$file->move($destino,$extesion);  
+
+       }else
+       {
+         DB::table('imageservices')->where('id',$request->id)
+                                      ->update(['description' => $request->description]);
+       }
+        
+        return redirect()->route('imageservice-p',['id' => $request->service_id]);      
+
     }
 }

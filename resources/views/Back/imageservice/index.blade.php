@@ -34,8 +34,10 @@
                                                 <td>
                                                     {{$item->langName}}
                                                 </td>
-                                                 <td>
-                                                    
+                                                <td>
+                                                    <a  class="btn btn-success" href="{{route('imageserviceShow',$item->idImages)}} "> 
+                                                        Modificar
+                                                    </a>                                               
                                                 </td>
                                                  
                                             </tr>
