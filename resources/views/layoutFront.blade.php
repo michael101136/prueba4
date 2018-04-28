@@ -163,7 +163,7 @@
                         <li class="{{ activeMenu('portafolio') }}"><a href="" rel="submenu4">{{trans('menu.Portafolio')}}</a>
                             <ul id="submenu4" class="ddsubmenustyle">
                                 <li><a href="{{route('portafolio')}}">{{trans('menu.Portafolio_hotel')}}</a></li>
-                                <li><a href="{{route('portafolio')}}">{{trans('menu.Portafolio_turismo')}}</a></li>
+                                <li><a href="{{route('portafolio-turismo')}}">{{trans('menu.Portafolio_turismo')}}</a></li>
                                 
                             </ul>
                         </li>

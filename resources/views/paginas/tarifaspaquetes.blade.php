@@ -1,13 +1,9 @@
 @extends('layoutFront')
 @section('contenido')
 <header id="page-header">
-            	<h1 id="page-title">Pricing Tables</h1>	
+           
             </header>
-            <!-- end page header -->
-        	
-            <!-- begin main content -->
-            
-            <hr>
+       
             
             <!-- begin pricing table - style 2 -->
             <section>

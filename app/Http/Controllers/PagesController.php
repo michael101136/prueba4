@@ -96,6 +96,32 @@ class PagesController extends Controller
 		return view('paginas/portafolio',['imagenesfooter'=>$imagenesfooter]);
 		}
 	}
+	public function portafolioturismo()
+	{
+		$lang=session('lang');
+	   	if($lang=='es')
+	    {
+		$imagenesfooter = DB::table('services')
+		->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+		->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+		->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+		->where('langs.name',$lang)
+		->whereBetween('services.id',[1,3])->get();	
+		
+		return view('paginas/portafolio',['imagenesfooter'=>$imagenesfooter]);
+		}
+		else
+		{
+		$imagenesfooter = DB::table('services')
+		->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+		->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+		->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+		->where('langs.name',$lang)
+		->whereBetween('services.id',[1,3])->get();	
+		
+		return view('paginas/portafolio',['imagenesfooter'=>$imagenesfooter]);
+		}
+	}
 	public function contacto()
 	{
 	
