@@ -24,26 +24,22 @@
                 
                 <!-- begin project description -->
                 <div class="one-fourth column-last">
-                    <h3>Overview</h3>
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">Panel with panel-primary class</div>
-                        <div class="panel-body">Panel Content</div>
+                    <h3></h3>
+                    <div class="panel panel-info class">
+                        <div class="panel-heading"><strong>{{trans('menu.Tipo_complementaria')}}</strong></div>
+                        <div class="panel-body"><br/>
+                        <div align="justify"><p>{{trans('contenido.Contenido_terapiacomplementaria')}}</p></div>
+                        <br>
+                        <h3></h3><br>
+                        <ul class="check">
+                  
+                            <li></li>
+                       
+                        </ul>        
+                        </div>
+                        
                     </div>
-                    <p>Proin ut volutpat elit. Suspendisse ullamcorper vulputate placerat. Nam tincidunt urna nec dui bibendum varius. Nullam odio lectus, tempor eleifend aliquam at, fermentum a magna. Donec in lectus ac ante dignissim elementum vel ut nibh.</p>
-                    
-                    <h3>Customer</h3>
-                    <p>&mdash; SmartBiz</p>
-                    
-                    <h3>Year</h3>
-                    <p>&mdash; 2012</p>
-                    
-                    <h3>Technology</h3>
-                    <ul class="check">
-                    	<li>User Interface Design</li>
-                    	<li>HTML/CSS/JavaScript</li>
-                        <li>PHP/MySQL</li>
-                    </ul>
-                    <a href="#" class="button">Visit Website</a>
+                   
                 </div>
                 <!-- end project description -->
                 <div class="clear"></div>

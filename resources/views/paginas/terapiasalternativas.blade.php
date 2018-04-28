@@ -24,55 +24,24 @@
                 
                 <!-- begin project description -->
                 <div class="one-fourth column-last">
-<div class="panel-group" id="accordion">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-        Que son las terapias alternativas</a>
-      </h4>
-    </div>
-    <div id="collapse1" class="panel-collapse collapse in">
-      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.</div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-        Collapsible Group 2</a>
-      </h4>
-    </div>
-    <div id="collapse2" class="panel-collapse collapse">
-      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.</div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-        Collapsible Group 3</a>
-      </h4>
-    </div>
-    <div id="collapse3" class="panel-collapse collapse">
-      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.</div>
-    </div>
-  </div>
-</div>
-                 
-                    
+                    <h3></h3>
+                    <div class="panel panel-info class">
+                        <div class="panel-heading"><strong>{{trans('menu.Tipo_alternativa')}}</strong></div>
+                        <div class="panel-body"><br/>
+                        <div align="justify"><p>{{trans('contenido.Contenido_terapiaalternativa')}}</p></div>
+                        <br>
+                        <h3></h3><br>
+                        <ul class="check">
+                  
+                            <li></li>
+                       
+                        </ul>        
+                        </div>
+                        
+                    </div>
                    
-                    <a href="#" class="button">Visit Website</a>
                 </div>
+              
                 <!-- end project description -->
                 <div class="clear"></div>
             </section>
