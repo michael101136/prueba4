@@ -17,8 +17,7 @@
     <link href="http://fonts.googleapis.com/css?family=Tinos:400,700,400italic,700italic" type="text/css" rel="stylesheet" id="main-style">
 
 
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css')}}">
 
     <link href="{{ asset('/css/style.css')}}" type="text/css" rel="stylesheet" id="main-style">
     <link href="{{ asset('/css/html5-reset.css')}}" type="text/css" rel="stylesheet" id="main-style">
@@ -91,19 +90,22 @@
                     <!-- end language switcher -->
                     
                     <!-- begin contact info -->
-                    <div class="contact-info" style="margin-top: -25px;">
+                    <div class="contact-info" style="margin-top: 2px;padding: 2px;">
                         
-
-                        {!! Form::open( ['route' => ['lenguaje'] , 'method' => 'POST' ]) !!}
-                        {!! Form::select('type', ['es' => 'Español', 'en' => 'Ingles'], session('lang'), 
+                        {!! Form::open( ['route' => ['lenguaje'] , 'method' => 'POST','class' => 'form-inline' ]) !!}
+                         <div class="form-group">
+                         {!! Form::select('type', ['es' => 'Español', 'en' => 'Ingles'], session('lang'), 
                             ['class' => 'form-control chosen-type', 'id' =>'idiomaMultiple', 'name' =>'idiomaMultiple']) !!}
-                           {!! Form::submit('Cambiar Idioma!', array('class' => 'btn'))!!}
+                        </div>
+                        <div class="form-group">
+                           {!! Form::submit('Cambiar Idioma', array('class' => 'btn'))!!}
+                        </div>
                         {!! Form::close() !!}
                         
                     </div>
                     <div class="contact-info">
                         <p class="phone">(123) 456-7890
-                        <a href="mailto:info@finesse.com">info@finesse.com</a></p>
+                        <a href="mailto:info@finesse.com">Inocencia@gmail.com</a></p>
                     </div>
                     <!-- end contact info -->
                 </div>
