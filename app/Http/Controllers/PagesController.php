@@ -286,7 +286,14 @@ class PagesController extends Controller
 			->where('langs.name',$lang)
 			->where('services.id','4')->get();
 		
-			return view('paginas/terapiasalternativas',['imagenes'=> $imagenes]);
+			$imagenesfooter = DB::table('services')
+            ->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+            ->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+            ->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->whereBetween('services.id',[4,7])->get();
+
+			return view('paginas/terapiasalternativas',['imagenes'=> $imagenes,'imagenesfooter'=>$imagenesfooter]);
 		}
 		else
 		{	
@@ -297,7 +304,14 @@ class PagesController extends Controller
 			->where('langs.name',$lang)
 			->where('services.id','4')->get();
 
-			return view('paginas/terapiasalternativas',['imagenes'=> $imagenes]);
+			$imagenesfooter = DB::table('services')
+            ->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+            ->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+            ->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->whereBetween('services.id',[4,7])->get();
+
+			return view('paginas/terapiasalternativas',['imagenes'=> $imagenes,'imagenesfooter'=>$imagenesfooter]);
 		}
 	}
 	public function terapiascomplementarias()
@@ -311,8 +325,15 @@ class PagesController extends Controller
 			->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
 			->where('langs.name',$lang)
 			->where('services.id','5')->get();
-		
-			return view('paginas/terapiascomplementarias',['imagenes'=> $imagenes]);
+			
+			$imagenesfooter = DB::table('services')
+            ->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+            ->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+            ->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->whereBetween('services.id',[4,7])->get();
+			
+			return view('paginas/terapiascomplementarias',['imagenes'=> $imagenes,'imagenesfooter'=>$imagenesfooter]);
 		}
 		else
 		{	
@@ -323,7 +344,14 @@ class PagesController extends Controller
 			->where('langs.name',$lang)
 			->where('services.id','5')->get();
 
-			return view('paginas/terapiascomplementarias',['imagenes'=> $imagenes]);
+			$imagenesfooter = DB::table('services')
+            ->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+            ->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+            ->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->whereBetween('services.id',[4,7])->get();
+
+			return view('paginas/terapiascomplementarias',['imagenes'=> $imagenes,'imagenesfooter'=>$imagenesfooter]);
 		}
 	}
 	public function terapiastradicionales()
@@ -338,7 +366,14 @@ class PagesController extends Controller
 			->where('langs.name',$lang)
 			->where('services.id','6')->get();
 		
-			return view('paginas/terapiastradicionales',['imagenes'=> $imagenes]);
+			$imagenesfooter = DB::table('services')
+            ->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+            ->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+            ->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->whereBetween('services.id',[4,7])->get();
+
+			return view('paginas/terapiastradicionales',['imagenes'=> $imagenes,'imagenesfooter'=>$imagenesfooter]);
 		}
 		else
 		{	
@@ -349,7 +384,14 @@ class PagesController extends Controller
 			->where('langs.name',$lang)
 			->where('services.id','6')->get();
 
-			return view('paginas/terapiastradicionales',['imagenes'=> $imagenes]);
+			$imagenesfooter = DB::table('services')
+            ->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+            ->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+            ->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->whereBetween('services.id',[4,7])->get();
+
+			return view('paginas/terapiastradicionales',['imagenes'=> $imagenes,'imagenesfooter'=>$imagenesfooter]);
 		}
 	}
 	public function terapiasenergeticas()
@@ -363,8 +405,15 @@ class PagesController extends Controller
 			->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
 			->where('langs.name',$lang)
 			->where('services.id','6')->get();
-		
-			return view('paginas/terapiasenergeticas',['imagenes'=> $imagenes]);
+			
+			$imagenesfooter = DB::table('services')
+            ->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+            ->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+            ->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->whereBetween('services.id',[4,7])->get();
+
+			return view('paginas/terapiasenergeticas',['imagenes'=> $imagenes,'imagenesfooter'=>$imagenesfooter]);
 		}
 		else
 		{	
@@ -375,7 +424,14 @@ class PagesController extends Controller
 			->where('langs.name',$lang)
 			->where('services.id','6')->get();
 
-			return view('paginas/terapiasenergeticas',['imagenes'=> $imagenes]);
+			$imagenesfooter = DB::table('services')
+            ->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+            ->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+            ->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->whereBetween('services.id',[4,7])->get();
+
+			return view('paginas/terapiasenergeticas',['imagenes'=> $imagenes,'imagenesfooter'=>$imagenesfooter]);
 		}
 	}
 	public function tarifaspaquetes()
