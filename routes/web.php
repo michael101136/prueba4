@@ -58,6 +58,9 @@ Route::post('serviceLangListStore' , ['as'=>'serviceLangListStore','uses'=>'Serv
 Route::get('imageservice/{id}' , ['as'=>'imageservice-p','uses'=>'imageserviceListP@listar']); 
 Route::get('imageserviceCreate/{idservice}' , ['as'=>'imageserviceCreate','uses'=>'imageserviceListP@create']);
 Route::post('imageserviceStore' , ['as'=>'imageserviceStore','uses'=>'imageserviceListP@store']);
+Route::get('imageserviceShow/{id}' , ['as'=>'imageserviceShow','uses'=>'imageserviceListP@show']);
+Route::post('imageserviceSave' , ['as'=>'imageserviceSave','uses'=>'imageserviceListP@save']);
+
 
 Route::resource('mensaje' , 'MensajeController');
 
