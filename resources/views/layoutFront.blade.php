@@ -95,16 +95,16 @@
                         {!! Form::open( ['route' => ['lenguaje'] , 'method' => 'POST','class' => 'form-inline' ]) !!}
                          <div class="form-group">
                          {!! Form::select('type', ['es' => 'Español', 'en' => 'Ingles'], session('lang'), 
-                            ['class' => 'form-control chosen-type', 'id' =>'idiomaMultiple', 'name' =>'idiomaMultiple']) !!}
+                            ['class' => 'form-control', 'id' =>'idiomaMultiple', 'name' =>'idiomaMultiple']) !!}
                         </div>
                         <div class="form-group">
-                           {!! Form::submit('Cambiar Idioma', array('class' => 'btn'))!!}
+                           {!! Form::submit('Cambiar Idioma', array('class' => 'btn btn-success'))!!}
                         </div>
                         {!! Form::close() !!}
                         
                     </div>
                     <div class="contact-info">
-                        <p class="phone">(123) 456-7890
+                        <p class="phone"> 954-152- 228
                         <a href="mailto:info@finesse.com">Inocencia@gmail.com</a></p>
                     </div>
                     <!-- end contact info -->
@@ -202,7 +202,7 @@
                     <div class="widget contact-info">
                         <h3>{{trans('footer.Contacto')}}</h3>
                         <p class="address"><strong>{{trans('footer.Direccion')}}:</strong> Av. Nuñez N° 705 Abancay-Apurímac</p>
-                        <p class="phone"><strong>{{trans('footer.Telefono')}}:</strong> (083) 321812</p>
+                        <p class="phone"><strong>{{trans('footer.Telefono')}}:</strong> 954-152-228</p>
                         <p class="email"><strong>{{trans('footer.Correo')}}:</strong> <a href="mailto:info@finesse.com">info@finesse.com</a></p>
                     </div>
                 </div>
