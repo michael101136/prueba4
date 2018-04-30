@@ -45,6 +45,10 @@
                         <a href="{{ Route('mensaje.index')}}"><span class="fa fa-bullhorn"></span> <span class="xn-text">Mensajes</span></a>
                     </li>                 
                    
+                    <li class="xn-title">Galeria Videos</li>                
+                    <li>
+                        <a href="{{ Route('videos.index')}}"><span class="fa fa-caret-square-o-right"></span><span class="xn-text">Videos</span></a>
+                    </li>  
     
                     <li class="xn-title">USUARIOS</li>                
                     <li>
