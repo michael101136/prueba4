@@ -455,7 +455,7 @@ class PagesController extends Controller
 			->join('langs', 'langs.id', '=', 'imageservices.lang_id')
 			->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
 			->where('langs.name',$lang)
-			->where('services.id','6')->get();
+			->where('services.id','7')->get();
 			
 			$imagenesfooter = DB::table('services')
             ->join('imageservices', 'services.id', '=', 'imageservices.service_id')
@@ -473,7 +473,7 @@ class PagesController extends Controller
             ->join('langs', 'langs.id', '=', 'imageservices.lang_id')
             ->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
 			->where('langs.name',$lang)
-			->where('services.id','6')->get();
+			->where('services.id','7')->get();
 
 			$imagenesfooter = DB::table('services')
             ->join('imageservices', 'services.id', '=', 'imageservices.service_id')
