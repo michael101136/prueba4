@@ -41,11 +41,21 @@ class MensajeController extends Controller
      */
     public function store(Request $request)
     {
-         $mensajes =Mensaje::create($request->all());
+        
+        $this->validate($request, [
+            'nombre' => 'required',
+            'email' => 'email|required',
+            'telefono' => 'required|numeric',
+            'dni' =>  'numeric|required',
+            'asunto' =>'required|max:200',
+            'mensaje' =>'required|max:200'
+        ]);
+  
+        $mensajes =Mensaje::create($request->all());
          
             // protected $fillable = ['nombre','comentario' ,'email','telefono','mensaje','user_id','paise_id']; //proteje de la signacion masiva de datos
 
-         return redirect()->route('contacto')->with('info' , 'Tu mensaje fue recibido');
+         return redirect()->route('contacto')->with('info' , 'Tu mensaje fue recibido en breves minutos nos comunicaremos con usted');
 
     }
 
