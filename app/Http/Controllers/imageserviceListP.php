@@ -13,7 +13,7 @@ class imageserviceListP extends Controller
     	$servicesImage = DB::table('services')
             ->join('imageservices', 'services.id', '=', 'imageservices.service_id')
             ->join('langs', 'langs.id', '=', 'imageservices.lang_id')
-            ->select('imageservices.id as idImages','imageservices.url as url','imageservices.description as description','services.name as name_servicio','langs.name as langName')
+            ->select('imageservices.id as idImages','imageservices.url as url','imageservices.name as name','imageservices.description as description','services.name as name_servicio','langs.name as langName')
             ->where('imageservices.service_id',$id)->get();
 
         $servicesImageName = DB::table('services')
@@ -37,7 +37,7 @@ class imageserviceListP extends Controller
         foreach ($file as $imagenEntrada)
          {
             $imageService= new Imagen;
-            $imageService->name = $request->name;
+            $imageService->name = $request->titulo;
             $imageService->url = '';
             $imageService->description = $request->description;
             $imageService->service_id = $request->id;
@@ -73,7 +73,7 @@ class imageserviceListP extends Controller
             $extesion=$request->id.'.'.$file->getClientOriginalExtension();
             
             DB::table('imageservices')->where('id',$request->id)
-                                      ->update(['description' => $request->description,'url' =>$extesion]);
+                                      ->update(['description' => $request->description,'url' =>$extesion,'name' =>$request->titulo]);
 
             $destino=public_path().'/images/servicios/';
             $subir =$file->move($destino,$extesion);  
@@ -81,7 +81,7 @@ class imageserviceListP extends Controller
        }else
        {
          DB::table('imageservices')->where('id',$request->id)
-                                      ->update(['description' => $request->description]);
+                                      ->update(['description' => $request->description,'name' =>$request->titulo]);
        }
         
         return redirect()->route('imageservice-p',['id' => $request->service_id]);      
