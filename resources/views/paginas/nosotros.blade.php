@@ -15,10 +15,12 @@
             	<h2></h2>
                 <!-- begin left-aligned image -->
                 <div class="entry-image float-left">
-                <a class="fancybox" rel="gallery-study" href="images/entries/full-size/study.jpg" title="Project Title"><span class="overlay zoom"></span><img src="images/entries/220x130/study-220x130.png" alt=""></a>
+                <a class="fancybox" rel="gallery-study" href="images/servicios/nosotroszoom.jpg" title="Project Title"><span class="overlay zoom"></span><img src="images/servicios/nosotros.jpg" alt=""></a>
    
                 </div>
-                <p align="justify">{{trans('contenido.Contenido_biografia')}}</p>
+                <CENTER><strong><font  SIZE=4 >HOTEL ABANCAY</font></strong></CENTER>
+            <BR/>
+                <p align="justify">{{trans('contenido.Contenido_nosotros')}}</p>
                 
                 
                 <!-- end left-aligned image -->

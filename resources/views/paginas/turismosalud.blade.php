@@ -15,9 +15,11 @@
             	<h2></h2>
                 <!-- begin left-aligned image -->
                 <div class="entry-image float-left">
-                <a class="fancybox" rel="gallery-study" href="images/entries/full-size/study.jpg" title="Project Title"><span class="overlay zoom"></span><img src="images/entries/220x130/study-220x130.png" alt=""></a>
+                <a class="fancybox" rel="gallery-study" href="images/servicios/turismozoom.jpg" title="Project Title"><span class="overlay zoom"></span><img src="images/servicios/turismo.jpg" alt=""></a>
    
                 </div>
+                <CENTER><strong><font  SIZE=4 >TURISMO DE SALUD</font></strong></CENTER>
+                <BR/>
                 <p align="justify">{{trans('contenido.Contenido_turismo_salud')}}</p>
                 
                 
