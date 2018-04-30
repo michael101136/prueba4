@@ -65,7 +65,7 @@ Route::post('imageserviceStore' , ['as'=>'imageserviceStore','uses'=>'imageservi
 Route::get('imageserviceShow/{id}' , ['as'=>'imageserviceShow','uses'=>'imageserviceListP@show']);
 Route::post('imageserviceSave' , ['as'=>'imageserviceSave','uses'=>'imageserviceListP@save']);
 
-
+Route::resource('videos' , 'VideosController'); //videos
 Route::resource('mensaje' , 'MensajeController');
 
 Route::get('back/',['as'=>'back','uses'=>'PagesController@back']);
