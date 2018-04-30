@@ -2,7 +2,7 @@
 @section('contenido')
 	<!-- begin page header -->
     <header id="page-header">
-            	<h1 id="page-title">BIOGRAFÍA</h1>	
+            	<h1 id="page-title">{{trans('menu.Biografia')}}</h1>	
             </header>
             <!-- end page header -->
         	
@@ -15,15 +15,19 @@
             	<h2></h2>
                 <!-- begin left-aligned image -->
                 <div class="entry-image float-left">
-                <a class="fancybox" rel="gallery-study" href="images/entries/full-size/study.jpg" title="Project Title"><span class="overlay zoom"></span><img src="images/entries/220x130/study-220x130.png" alt=""></a>
+                @foreach($imagenes as $itemp)
+                <a class="fancybox" rel="gallery-study" href="{{URL::asset('/images/servicios/'.$itemp->imageurl)}}" title="Project Title"><span class="overlay zoom"></span><img src="{{URL::asset('/images/servicios/'.$itemp->imageurl)}}" alt=""></a>
+
+       @endforeach   
+               
    
                 </div>
-                <p align="justify">{{trans('contenido.Contenido_biografia')}}</p>
+              
                 
-                
-                <!-- end left-aligned image -->
-                
-                
+             
             </section>
+            <CENTER><strong><font  SIZE=4 >INOCENCIA SANA</font></strong></CENTER>
+            <BR/>
+            <p align="justify">{{trans('contenido.Contenido_biografia')}}</p>
             <!-- end aligned images -->
 @endsection

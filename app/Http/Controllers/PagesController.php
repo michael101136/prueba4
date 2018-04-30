@@ -136,7 +136,32 @@ class PagesController extends Controller
 	}
 	public function nosotrosbiografia()
 	{
-		return view('paginas/nosotrosbiografia');
+		$lang=session('lang');
+	   	if($lang=='es')
+	    {
+			$imagenes = DB::table('services')
+            ->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+            ->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+            ->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->where('services.id','10')->get();	
+		
+		return view('paginas/nosotrosbiografia',['imagenes'=>$imagenes]);
+		}
+		else
+		{
+			$imagenes = DB::table('services')
+            ->join('imageservices', 'services.id', '=', 'imageservices.service_id')
+            ->join('langs', 'langs.id', '=', 'imageservices.lang_id')
+            ->select('imageservices.id as idSeLan','services.name as name_servicio','imageservices.url as imageurl','langs.name')
+			->where('langs.name',$lang)
+			->where('services.id','10')->get();
+		
+		return view('paginas/nosotrosbiografia',['imagenes'=>$imagenes]);
+		}
+		
+		
+
 	}
 	public function habitacionessimples()
 	{

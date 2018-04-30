@@ -12,5 +12,6 @@ return array(
     'Direccion' => 'Dirección', 
     'Telefono' => 'Teléfono', 
     'Correo' => 'Correo electrónico', 
-    'Horario' => 'Horario de atención',  
+    'Horario' => 'Horario de atención',
+    'Pais'=>'País'  
 );

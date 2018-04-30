@@ -45,7 +45,7 @@
             <form class="content-form" method="POST" action="{{route('mensaje.store')}}">
                  {!!  csrf_field() !!}
                  <p>
-                    <label for="name">Pais<span class="note">*</span></label>
+                    <label for="name">{{trans('contacto.Pais')}}<span class="note">*</span></label>
                     <select style="height: 35px;width: 370px;" name="paise_id" id="paise_id">
                         @foreach ($paises as $itemp)
                             <option value="{{$itemp->id}}">{{$itemp->Pais}}</option>
@@ -65,19 +65,19 @@
                     <input id="email" type="text" name="email" class="required">
                 </p>
                 <p>
-                    <label for="telefono">Teléfono<span class="note">*</span></label>
+                    <label for="telefono">{{trans('contacto.Telefono')}}<span class="note">*</span></label>
                     <input id="telefono" type="text" name="telefono" class="required">
                 </p>
                 <p>
-                    <label for="url">{{trans('contacto.DNI')}}</label>
+                    <label for="url">{{trans('contacto.DNI')}}<span class="note">*</span></label>
                     <input id="dni" type="text" name="dni">
                 </p>
                 <p>
-                    <label for="url">Asunto</label>
+                    <label for="url">{{trans('contacto.Asunto')}}<span class="note">*</span></label>
                     <input id="asunto" type="text" name="asunto">
                 </p>
                 <p>
-                    <label for="message">{{trans('contacto.Mensaje')}}:<span class="note">*</span></label>
+                    <label for="message">{{trans('contacto.Mensaje')}}<span class="note">*</span></label>
                     <textarea id="mensaje" cols="68" rows="8" name="mensaje" class="required"></textarea>
                 </p>
                 <p>

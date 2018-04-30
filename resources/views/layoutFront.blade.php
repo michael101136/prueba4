@@ -128,7 +128,7 @@
                         <li class="{{ activeMenu('nosotros') }}"><a href="#" rel="submenu4">{{trans('menu.Empresa')}}</a>
                             <ul id="submenu4" class="ddsubmenustyle">
                                 <li><a href="{{route('nosotros')}}">{{trans('menu.Nosotros')}}</a></li>
-                                <li><a href="{{route('nosotros-biografia')}}">{{trans('menu.Biografia')}}</a></li>
+                                
                             </ul>
                         </li>
 
@@ -144,6 +144,7 @@
                         <li class="{{ activeMenu('terapias') }}"><a href="#" rel="submenu2">{{trans('menu.Turismo_salud')}}</a>
                             <ul id="submenu2" class="ddsubmenustyle">
                                 <li><a href="{{route('terapias-turismosalud')}}">{{trans('menu.Acerca_de')}}</a></li>
+                                <li><a href="{{route('terapias-biografia')}}">{{trans('menu.Biografia')}}</a></li>
                                 <li><a href="#">{{trans('menu.Tipo_terapia')}}</a>
                                     <ul>
                                         <li><a href="{{route('terapias-alternativas')}}">{{trans('menu.Tipo_alternativa')}}</a></li>
