@@ -9,7 +9,7 @@
                         <li>
                                 <img src="{{URL::asset('/images/servicios/'.$itemp->imageurl)}}" alt="White Living Room">
                                 <div class="flex-caption">
-                                    <h2>{{$itemp->description}}</h2>
+                                    <h2>{{$itemp->name}}</h2>
                                  
                                     <p>{{$itemp->description}}.</p>
                                 </div>
