@@ -20,6 +20,7 @@
                                             <tr>
                                                 <th>N°</th>
                                                 <th>Imagen</th>
+                                                <th>Título</th>
                                                 <th>Descripción</th>
                                                 <th>Lang</th>
                                                 <th style="float: center;">Acción</th>
@@ -30,6 +31,7 @@
                                             <tr>
                                                 <td>{{$item->idImages}}</td>
                                                 <td> <img src="{{URL::asset('/images/servicios/'.$item->url)}}" width="50px" height="50px" alt="Klorofil Logo" class="img-responsive logo"{{$item->url}} ></td>
+                                                <td>{{$item->name}}</td>
                                                 <td>{{$item->description}}</td>
                                                 <td>
                                                     {{$item->langName}}

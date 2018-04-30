@@ -37,7 +37,15 @@
 						</div>
 						
 					</div>
-                   
+                   <div class="form-group"> 
+						<label  class="col-lg-2 control-label">
+							Título
+						</label>
+						<div class="col-lg-5">
+							<input type="text" name="titulo" id="titulo" class="form-control">
+						</div>
+                        
+					</div>
                     <div class="form-group"> 
 						<label  class="col-lg-2 control-label">
 							Descripción
@@ -55,7 +63,7 @@
 				    </div>
 				    <div class="form-group">
 				    	 <div class="col-lg-5" style="text-align: center;">
-				  		 	 <input type="submit" class="btn btn-info" value="Registrar Sevicio">
+				  		 	 <input type="submit" class="btn btn-info" value="Registrar Servicio">
 				  		 </div>
 					</div>
                 {!! Form::close() !!}

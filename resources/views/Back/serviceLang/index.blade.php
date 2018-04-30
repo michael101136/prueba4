@@ -30,7 +30,10 @@
                                                 <td>{{$item->idSeLan}}</td>
                                                 <td>{{$item->name}}</td>
                                                 <td>{{$item->name_servicio_lan}}</td>
-                                                <td>          
+                                                <td>   
+                                                 <a  class="btn btn-success" href="{{route('serviceLangListShow',$item->idSeLan)}} "> 
+                                                        Modificar
+                                                    </a>       
                                                 </td>
                                             </tr>
                                             @endforeach

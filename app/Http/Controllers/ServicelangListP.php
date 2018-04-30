@@ -30,4 +30,20 @@ class ServicelangListP extends Controller
         $serviceLang->save();
         return redirect()->route('serviceLangListP',['id' => $request->id]);
     }
+    public function show($id)
+    {
+        $serviceslangs = DB::table('serviceslangs')
+                        ->where('id' , $id)->first();
+        $lang_id=$serviceslangs->lang_id;
+ 
+        return view('Back.serviceLang.show',['serviceslangs'=>$serviceslangs,'langs_id'=>$lang_id ]);
+
+    }
+    public function save(Request $request)
+    {
+        DB::table('serviceslangs')->where('id',$request->id)
+                                      ->update(['name' => $request->description,'lang_id' =>$request->idioma_id]);
+         
+        return redirect()->route('serviceLangListP',['id' => $request->service_id]);
+    }
 }

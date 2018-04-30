@@ -60,7 +60,13 @@
     <script src="{{ asset('/js/jssor.slider-27.1.0.min.js')}}" type="text/javascript"></script>
  
     <!-- end JS -->
-    
+    <style type="text/css">
+        .error
+        {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
     <title>HOTEL ABANCAY</title>
 </head>
 

@@ -14,12 +14,21 @@
 						
                     <div class="form-group"> 
 						<label  class="col-lg-2 control-label">
+							Título
+						</label>
+						<div class="col-lg-5">
+							<input type="text" name="titulo" id="titulo" value="{{$detalleImagen->name}}" class="form-control">
+						</div>
+                        
+					</div>
+                    <div class="form-group"> 
+						<label  class="col-lg-2 control-label">
 							Descripción
 						</label>
 						<input type="" name="id" id="id" value="{{$detalleImagen->id}}" hidden>
 						<input type="" name="service_id" id="service_id" value="{{$detalleImagen->service_id}}" hidden>
 						<input type="" name="url" id="url" value="{{$detalleImagen->url}}" hidden>
-
+						
 						<div class="col-lg-5">
 						    <textarea class="form-control" style="text-align: left;" name="description" rows="5" id="description">
 						    	{{$detalleImagen->description}}
@@ -42,7 +51,7 @@
 				    
 				    <div class="form-group">
 				    	 <div class="col-lg-5" style="text-align: center;">
-				  		 	 <input type="submit" class="btn btn-info" value="Modificar Sevicio">
+				  		 	 <input type="submit" class="btn btn-info" value="Modificar Servicio">
 				  		 </div>
 					</div>
                 {!! Form::close() !!}
