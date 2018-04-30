@@ -55,6 +55,9 @@ Route::resource('serviceLang' , 'ServiceLangController'); //llamando al controla
 Route::get('serviceLangListP/{id}' , ['as'=>'serviceLangListP','uses'=>'ServicelangListP@listar']); //llamando al controlador
 Route::get('serviceLangListcreate/{idservice}' , ['as'=>'serviceLangListcreate','uses'=>'ServicelangListP@create']);
 Route::post('serviceLangListStore' , ['as'=>'serviceLangListStore','uses'=>'ServicelangListP@store']);
+Route::get('serviceLangListShow/{id}' , ['as'=>'serviceLangListShow','uses'=>'ServicelangListP@show']);
+Route::post('serviceLangListSave' , ['as'=>'serviceLangListSave','uses'=>'ServicelangListP@save']);
+
 
 Route::get('imageservice/{id}' , ['as'=>'imageservice-p','uses'=>'imageserviceListP@listar']); 
 Route::get('imageserviceCreate/{idservice}' , ['as'=>'imageserviceCreate','uses'=>'imageserviceListP@create']);
