@@ -5,7 +5,7 @@ return array(
     'Contacto'=>'Contáctenos',
     'Direccion'=>'Dirección',
     'Telefono'=>'Teléfono',
-    'Correo'=>'Correo electrónico',
+    'Correo'=>'Correo',
     'Redes_sociales'=>'Redes sociales',
     'Redes_concepto'=>'También nos pueden encontrar en nuestras redes sociales',
   

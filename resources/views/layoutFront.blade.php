@@ -110,8 +110,8 @@
                         
                     </div>
                     <div class="contact-info">
-                        <p class="phone"> 954-152- 228
-                        <a href="mailto:info@finesse.com">Inocencia@gmail.com</a></p>
+                        <p class="phone"> (+51) 954-152- 228
+                        <a href="mailto:info@finesse.com">inocenciasanando@gmail.com</a></p>
                     </div>
                     <!-- end contact info -->
                 </div>
@@ -209,8 +209,8 @@
                     <div class="widget contact-info">
                         <h3>{{trans('footer.Contacto')}}</h3>
                         <p class="address"><strong>{{trans('footer.Direccion')}}:</strong> Av. Nuñez N° 705 Abancay-Apurímac</p>
-                        <p class="phone"><strong>{{trans('footer.Telefono')}}:</strong> 954-152-228</p>
-                        <p class="email"><strong>{{trans('footer.Correo')}}:</strong> <a href="mailto:info@finesse.com">info@finesse.com</a></p>
+                        <p class="phone"><strong>{{trans('footer.Telefono')}}:</strong> (+51) 954-152-228</p>
+                        <p class="email"><strong>{{trans('footer.Correo')}}:</strong> <a href="mailto:inocenciasana@gmail.com">inocenciasanando@gmail.com</a></p>
                     </div>
                 </div>
  
