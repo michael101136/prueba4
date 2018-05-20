@@ -21,8 +21,18 @@
                 <CENTER><strong><font  SIZE=4 >TURISMO DE SALUD</font></strong></CENTER>
                 <BR/>
                 <p align="justify">{{trans('contenido.Contenido_turismo_salud')}}</p>
-                
-                
+                <p align="justify">{{trans('contenido.Contenido_turismo_salud1')}}</p>
+                <p align="justify">{{trans('contenido.Contenido_turismo_salud2')}}</p>
+                <p align="justify">{{trans('contenido.Contenido_turismo_salud3')}}</p>
+                <p align="justify">{{trans('contenido.Contenido_turismo_abancay')}}</p>
+                <p align="justify">{{trans('contenido.Contenido_turismo_abancay1')}}</p>
+                <p align="justify">{{trans('contenido.Contenido_turismo_abancay2')}}</p>
+                <p align="justify">{{trans('contenido.Contenido_turismo_abancay3')}}</p>
+                <p align="justify">{{trans('contenido.Contenido_turismo_abancay4')}}</p>
+                <p align="justify">{{trans('contenido.Contenido_turismo_Fines1')}}</p>
+                <p align="justify">{{trans('contenido.Contenido_turismo_Fines2')}}</p>
+                <p align="justify">{{trans('contenido.Contenido_turismo_Fines3')}}</p>
+
                 <!-- end left-aligned image -->
                 
                 
